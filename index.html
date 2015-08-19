@@ -1,0 +1,195 @@
+---
+layout: bootcamp
+root: .
+venue: IUPUI
+address: ICTC, 535 W Michigan, Indianapolis, IN 46202
+country: United-States
+humandate: Mar 03-06, 2015  
+humantime: 8:30 am - 5:30 pm 
+startdate: 2015-03-03   
+enddate: 2015-03-06 
+latlng: 39.773931,-86.167524
+registration: restricted
+instructor: ["Mats Rynge", "Emelie Harstad", "Bala Desinghu", "David Champion", "Suchandra Thapa", "Rob Quick"]
+helper: ["Chris Pipes, Elizabeth Prout"]
+contact: balamurugan@uchicago.edu 
+---
+    
+
+<!--
+    Edit the values in the parameter block above to be appropriate for your bootcamp.
+
+-->
+
+<h2>General Information</h2>
+
+<p>
+  The <a href="http://www.opensciencegrid.org">Open Science Grid</a> (OSG) is a national scale distributed 
+  infrastructure for scientific computing.  The <a href="http://osgconnect.net">OSG Connect</a>
+  service provides easy access to the resources that OSG provides. The OSG also offers training and tutorials for the 
+  scientists and researchers. As part of our training service we are offering an extended Software Carpentry 
+  workshop which augments instruction on basic Linux tools and programming with tutorials on using distributed 
+  high throughput computing workflows on the OSG. Participants will be encouraged to help one another
+  and to apply what they have learned to their own research problems.
+</p>
+
+<p>
+  <a href="http://software-carpentry.org">Software Carpentry</a>'s mission
+  is to help scientists and engineers become more productive
+  by teaching them basic lab skills for computing
+  like program design, version control, data management, and task automation.
+</p>
+
+<p>
+  This workshop is being run by the <a href="http://opensciencegrid.org/">OSG</a>, in collaboration with 
+  <a href="http://software-carpentry.org">Software Carpentry</a>.
+</p>
+
+</p>
+  
+<!-- This block displays the instructors' names if they are available. -->
+{% if page.instructor %}
+<p>
+  <strong>Instructors:</strong>
+  {{page.instructor | join: ', ' %}}
+</p>
+{% endif %}
+
+<!-- This block displays the helpers' names if they are available. -->
+{% if page.helper %}
+<p>
+  <strong>Helpers:</strong>
+  {{page.helper | join: ', ' %}}
+</p>
+{% endif %}
+
+<!--
+    Modify this block to reflect the target audience for your bootcamp.
+    In particular, if it is only open to people from a particular institution,
+    or if specialized prerequisite knowledge is required, please mention that.
+-->
+<p>
+  <strong>Who:</strong>
+  The course is aimed at graduate students, post-doctoral researchers and other researchers.
+</p>
+
+<!--
+    This block displays the address and links to a map showing directions.
+-->
+{% if page.latlng %}
+<p>
+  <strong>Where:</strong>
+  {{ page.address }}.
+  Get directions with
+  <a href="http://osm.org/go/ZUeedZ3vV?way=154656512">OpenStreetMap</a>
+  or
+  <a href="https://goo.gl/maps/4ayk7">Google Maps</a>. 
+</p>
+{% endif %}
+
+<!--
+    Modify the block below if there are any special requirements.
+-->
+<p>
+  <strong>Requirements:</strong>
+  Participants must bring a laptop with a few specific software packages installed
+  (listed below).
+</p>
+
+<!--
+    This block automatically inserts a contact email address if one has been specified for the page.
+    If one hasn't, this block inserts the generic contact address for Software Carpentry.
+-->
+<p>
+  <strong>Contact</strong>:
+  For more information, please email: balamurugan@uchicago.edu   </a>.
+</p>
+
+<hr/>
+
+<h2>Registration</h2>
+<p>
+Event is free but registration required. Space is limited for the event. To register,  please <a href="http://go.iu.edu/i6S"> visit here </a>.
+</p>
+<hr/>
+
+<h2>Schedule</h2>
+
+<div class="row-fluid">
+  <div class="span6">
+    <h3>Day 1 - Scientific Computing Intro, Unix and Git</h3>
+    <table class="table table-striped">
+      <tr> <td>08:30</td> <td>Software setup and account signup</td> </tr>
+      <tr> <td>09:00</td> <td>What is Scientific Computing?</td> </tr>
+      <tr> <td>09:15</td> <td>Software, Computers, Data and Networks </td> </tr> 
+      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>10:45</td> <td>Introduction to the Unix shell (part 1) </td> </tr> 
+      <tr> <td>12:00</td> <td>Lunch break</td> </tr>
+      <tr> <td>13:30</td> <td>Introduction to the Unix shell (part 2)</td> </tr> 
+      <tr> <td><em>15:00</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>15:15</td> <td>Version control with Git  </td> </tr>
+      <tr> <td>17:30</td> <td>Wrap Up</td> </tr>
+    </table>
+  </div>
+  <div class="span6">
+    <h3>Day 2 - Python Programming</h3>
+    <table class="table table-striped">
+      <tr> <td>08:30</td> <td>Set up and review of day 1 </td> </tr>
+      <tr> <td>09:00</td> <td>Building programs with Python (part 1)  </td> </tr>
+      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>10:45</td> <td>Building programs with Python (part 1, continued)  </td> </tr>
+      <tr> <td>12:00</td> <td>Lunch break</td> </tr>
+      <tr> <td>13:30</td> <td>Building programs with Python (part 2)  </td> </tr>
+      <tr> <td><em>15:00</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>15:15</td> <td>Building programs with Python (part 2, continued)  </td> </tr>
+      <tr> <td>17:30</td> <td>Wrap Up</td> </tr>
+    </table>
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="span6">
+    <h3>Day 3 - High Throughput Computing (HTC) </h3>
+    <table class="table table-striped">
+      <tr> <td>08:30</td> <td>Set up and review of day 1 and 2 </td> </tr>
+      <tr> <td>09:00</td> <td>Introduction to Distributed High Throughput Computing (DHTC) </td> </tr>
+      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>10:45</td> <td>Computing on Campus and on OSG </td> </tr>
+      <tr> <td>12:00</td> <td>Lunch break</td> </tr>
+      <tr> <td>13:30</td> <td> Handling Data </td> </tr>
+      <tr> <td><em>15:00</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>15:15</td> <td>Large Scale HTC Computation </td> </tr>
+      <tr> <td>17:30</td> <td>Wrap Up</td> </tr>
+    </table>
+  </div>
+</div>
+<hr/>
+
+<!--
+    Edit this block to show what topics will be covered.
+-->
+
+<h2>Setup Instructions </h2>
+<p>
+  <a href="setup.html">Instructions to set up the required software on Linux, Windows and Mac laptops and OSG sign up information. </a>
+</p>
+<hr/> 
+
+<h2>Lessons</h2>
+<p>
+  <a href="contents.html">Course material for the workshop</a>. 
+</p>
+<hr/> 
+
+<h2>Survey</h2>
+<p>
+  <a href="https://docs.google.com/forms/d/1XvqTIV2aTEymyJyAchjacS8MvX3Cp9oRH0hPfed6QDo/viewform">Post workshop survey</a>. 
+</p>
+<hr/> 
+
+
+
+<!--
+    Edit the setup instructions in _includes/setup.html to reflect your bootcamp.
+    (In particular, most bootcamps teach either Python or R, not both.)
+-->
