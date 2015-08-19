@@ -1,0 +1,214 @@
+---
+layout: bootcamp
+root: .
+venue: IUPUI
+address: ICTC, 535 W Michigan, IUPUI
+country: United-States
+humandate: Mar 03-06 , 2015  
+humantime: 8:30 am - 4:30 pm 
+startdate: 2015-01-03   
+enddate:   2015-01-06 
+latlng: 41.790743, -87.601077
+registration: restricted
+instructor: ["Rob Quick, Mats Rynge, Kyle Gross, Emelie Harsted, Soichi, Bala Desinghu, Suchandra Thapa, David Champion, Robert Gardner"]
+helper: [" "]
+contact: Rob Quick, balamurugan@uchicago.edu 
+---
+    
+
+<!--
+    Edit the values in the parameter block above to be appropriate for your bootcamp.
+-->
+
+<h2>General Information</h2>
+
+<p>
+  The <a href="http://www.opensciencegrid.org">Open Science Grid</a> (OSG) is a national scale distributed 
+  infrastructure for scientific computing.  The <a href="http://osgconnect.net">OSG Connect</a>
+  service provides easy access to the resources that OSG provides. The OSG also offers training and tutorials for the 
+  scientists and researchers. As part of our training service we are offering an extended Software Carpentry 
+  workshop which augments instruction on basic Linux tools and programming with tutorials on using distributed 
+  high throughput computing workflows on the OSG. Participants will be encouraged to help one another
+  and to apply what they have learned to their own research problems.
+</p>
+
+<p>
+  <a href="http://software-carpentry.org">Software Carpentry</a>'s mission
+  is to help scientists and engineers become more productive
+  by teaching them basic lab skills for computing
+  like program design, version control, data management, and task automation.
+</p>
+
+<p>
+  This workshop is being run by the <a href="http://opensciencegrid.org/">OSG</a>, in collaboration with 
+  <a href="http://software-carpentry.org">Software Carpentry</a>.
+</p>
+
+</p>
+  
+<!-- This block displays the instructors' names if they are available. -->
+{% if page.instructor %}
+<p>
+  <strong>Instructors:</strong>
+  {{page.instructor | join: ', ' %}}
+</p>
+{% endif %}
+
+<!-- This block displays the helpers' names if they are available. -->
+{% if page.helper %}
+<p>
+  <strong>Helpers:</strong>
+  {{page.helper | join: ', ' %}}
+</p>
+{% endif %}
+
+<!--
+    Modify this block to reflect the target audience for your bootcamp.
+    In particular, if it is only open to people from a particular institution,
+    or if specialized prerequisite knowledge is required, please mention that.
+-->
+<p>
+  <strong>Who:</strong>
+  The course is aimed at graduate students, post-doctoral researchers and other researchers.
+</p>
+
+<!--
+    This block displays the address and links to a map showing directions.
+-->
+{% if page.latlng %}
+<p>
+  <strong>Where:</strong>
+  {{ page.address }}.
+  Get directions with
+  <a href="http://osm.org/go/ZUeedZ3vV?way=154656512">OpenStreetMap</a>
+  or
+  <a href="https://goo.gl/maps/qDqz2">Google Maps</a>.  <i>You will enter
+  at the basement level. Turn south inside Searle to take the elevator to
+  floor 2. Exiting the elevator, turn right twice, quickly, to head east
+  down the hallway to room 240.</i>
+</p>
+{% endif %}
+
+<!--
+    Modify the block below if there are any special requirements.
+-->
+<p>
+  <strong>Requirements:</strong>
+  Participants must bring a laptop with a few specific software packages installed
+  (listed below).
+</p>
+
+<!--
+    This block automatically inserts a contact email address if one has been specified for the page.
+    If one hasn't, this block inserts the generic contact address for Software Carpentry.
+-->
+<p>
+  <strong>Contact</strong>:
+  Please mail
+  {% if page.contact %}
+    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+  {% else %}
+    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
+  {% endif %}
+  for more information.
+</p>
+
+<hr/>
+
+<h2>Hang out on the Etherpad</h2>
+<p>
+<a href="https://etherpad.mozilla.org/orq87yyi21"> Join the etherpad </a> to ask questions and find useful information during the lesson.  
+</p> 
+
+<h2>Registration</h2>
+<p>
+Event is free but registration required. Space is limited for the event. To register,   
+<a href="https://www.eventbrite.com/e/swc-osg-uchicago-tickets-14604886609?utm_campaign=new_event_email&utm_medium=email&utm_source=eb_email&utm_term=eventname_text"> please visit here </a> 
+</p>
+<hr/>
+
+<h2>Schedule</h2>
+
+<div class="row-fluid">
+  <div class="span4">
+    <h3>Day 1</h3>
+    <table class="table table-striped">
+      <tr> <td>08:30</td> <td>Software setup and account signup</td> </tr>
+      <tr> <td>09:00</td> <td> <a href="http://goo.gl/1HfOTr">Welcome Address</a></td> </tr> 
+      <tr> <td>09:15</td> <td>Introduction to the Unix shell </td> </tr> 
+      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>10:45</td> <td>Introduction to the Unix shell (continued) </td> </tr> 
+      <tr> <td>12:00</td> <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td> <td>Version control with Git </td> </tr>
+      <tr> <td><em>15:00</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>15:30</td> <td>Version control with Git (continued) </td> </tr>
+      <tr> <td>17:00</td> <td>Wrap Up</td> </tr>
+    </table>
+  </div>
+  <div class="span4">
+    <h3>Day 2</h3>
+    <table class="table table-striped">
+      <tr> <td>08:30</td> <td>Set up and review of day 1 </td> </tr>
+      <tr> <td>09:00</td> <td>Building programs with Python  </td> </tr>
+      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>10:45</td> <td>Building programs with Python (continued)  </td> </tr>
+      <tr> <td>12:00</td> <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td> <td>Distributed High Throughput Computing </td> </tr>
+      <tr> <td><em>14:30</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>15:00</td> <td>Distributed High Throughput Computing (continued) </td> </tr>
+      <tr> <td>17:00</td> <td>Wrap Up</td> </tr>
+    </table>
+  </div>
+  <div class="span4">
+    <h3>Day 3</h3>
+    <table class="table table-striped">
+      <tr> <td>08:30</td> <td>Set up and review of day 2</td> </tr>
+      <tr> <td>09:00</td> <td>Introduction to Distributed High Throughput Computing </td> </tr>
+      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>10:45</td> <td>Running jobs on the open science grid </td> </tr>
+      <tr> <td>12:00</td> <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td> <td>Data Handling </td> </tr>
+      <tr> <td><em>14:30</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>15:00</td> <td>Large Scale Computation </td> </tr>
+      <tr> <td>17:00</td> <td>Wrap Up</td> </tr>
+    </table>
+  </div>
+</div>
+
+<hr/>
+
+<!--
+    Edit this block to show what topics will be covered.
+-->
+
+<h2>Setup Instructions </h2>
+<p>
+  <a href="setup.html">Instructions to set up the required software on Linux, Windows and Mac laptops and OSG sign up information. </a>
+</p>
+<hr/> 
+
+<h2>Lessons</h2>
+<p>
+  <a href="contents.html">Course material for the workshop</a>. 
+</p>
+<hr/> 
+
+<h2>Syllabus</h2>
+<p>
+  <a href="syllabus.html">Syllabus for the workshop</a>. 
+</p>
+<hr/> 
+
+
+<h2>Survey</h2>
+<p>
+  <a href="https://docs.google.com/forms/d/1XvqTIV2aTEymyJyAchjacS8MvX3Cp9oRH0hPfed6QDo/viewform">Post workshop survey</a>. 
+</p>
+<hr/> 
+
+
+
+<!--
+    Edit the setup instructions in _includes/setup.html to reflect your bootcamp.
+    (In particular, most bootcamps teach either Python or R, not both.)
+-->
