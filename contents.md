@@ -6,7 +6,6 @@ title: Lessons
 
 
 ## [Introduction](intro.html)
-(Bala)
 
 ## Unit I: [The Unix Shell ](novice/shell/index.html)
 
