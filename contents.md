@@ -9,7 +9,6 @@ title: Lessons
 (Bala)
 
 ## Unit I: [The Unix Shell ](novice/shell/index.html)
-(David 1-8)
 
 1.  [Introducing the Shell](novice/shell/00-intro.html)
 2.  [Files and Directories](novice/shell/01-filedir.html)
@@ -21,7 +20,6 @@ title: Lessons
 8.  [Reference...](novice/ref/01-shell.html)
 
 ## Unit II: [Version Control with Git ](novice/git/index.html)
-(Bala 1-6)
 
 1.  [Introducing Version Control](novice/git/00-intro.html)
 2.  [A Better Kind of Backup](novice/git/01-backup.html)
@@ -31,7 +29,6 @@ title: Lessons
 6.  [Reference...](novice/ref/02-git.html)
 
 ## Unit III: [Programming with Python ](novice/python/index.html)
-(David 1-3. Suchandra 4-6)
 
 1.  [Analyzing Data with NumPy](novice/python/01-numpy.html)
 2.  [Creating Functions](novice/python/02-func.html)
@@ -42,17 +39,15 @@ title: Lessons
 7.  [Reference...](novice/ref/03-python.html)
 
 ## Unit IV: [Distributed Computing on Open Science Grid](novice/DHTC/index.html)
-(Emelie 1-3. Mats 4, 8 and 9. Suchandra 6. Bala 7)
 
-1.  [Introduction to Open Science Grid  (Emelie) ](novice/DHTC/01-IntroGrid.html)
-2.  [Getting access to OSG   (Emelie) ](novice/DHTC/02-ssh.html)
-3.  [Software Resources on OSG (Emelie) ](novice/DHTC/03-OSGtour.html)
-4.  [Submitting Jobs  - HTCondor (Mats) ](novice/DHTC/04-HTCondor-Submitting.html)
-5.  [Scaling Up Resources (Mats) ](novice/DHTC/04a-ScalingUp.html)
-6.  [Data Storage and Transfer (Suchandra) ](novice/DHTC/05-Stash.html)
-7.  [Workflow Management - DAGMan (Bala) ](novice/DHTC/06-dagman-namd.html)
-8.  [Workflow Management - Pegasus (Mats) ](novice/DHTC/06a-pegasus-namd.html)
-9.  [Troubleshooting (Mats) ](novice/DHTC/07-TroubleShooting.html)
+1.  [Introduction to Open Science Grid ](novice/DHTC/01-IntroGrid.html)
+2.  [Software Resources on OSG  ](novice/DHTC/03-OSGtour.html)
+3.  [Submitting Jobs  - HTCondor ](novice/DHTC/04-HTCondor-Submitting.html)
+4.  [Troubleshooting ](novice/DHTC/07-TroubleShooting.html)
+5.  [Data Storage and Transfer ](novice/DHTC/05-Stash.html)
+6.  [Scaling Up Resources and MATLAB runtime execution](novice/DHTC/04a-ScalingUp.html)
+7.  [Workflow Management - DAGMan ](novice/DHTC/06-dagman-namd.html)
+8.  [Workflow Management - Pegasus (optional) ](novice/DHTC/06a-pegasus-namd.html)
 
 ## Further Materials
 
