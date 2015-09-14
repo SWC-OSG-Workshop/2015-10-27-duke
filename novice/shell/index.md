@@ -39,6 +39,7 @@ These lessons will start you on a path towards using these resources effectively
 > Download the zipped filesystem by clicking [this link](../../data/filesystem.zip). Unpack the zipped
 > files - on Windows or a Mac, you can probably just double-click or click the downloaded
 > file to unpack it. On linux you can type in a command like
+>
 > ~~~
 > $ unzip filesystem.zip
 > ~~~
