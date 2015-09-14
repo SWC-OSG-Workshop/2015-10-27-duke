@@ -12,14 +12,7 @@ title: Distributed High Throughput Computing
 >###Time: 8:30 am - 12.00 pm (part 1) and 1.30 pm - 4.30 pm (part2), Oct 29th 2015
 >
 
-
-
-
-*    Your computation splits into many independent jobs
-*    Your workflow involves individual jobs be run on a single processor
-*    Your application can be interrupted and restarted at a later time 
-
-Come to this session to learn all about DHTC and the basics of grid computing. Learn 
+Come to this session to learn all about DHTC and the basics of grid computing. For example, 
 
 *    what is distributed high throughput computing 
 *    what are the best practices of DHTC
