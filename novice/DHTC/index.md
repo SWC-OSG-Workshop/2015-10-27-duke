@@ -4,9 +4,13 @@ root: ../..
 title: Distributed Computing on Open Science Grid
 ---
 
-Come to this session to learn how your research would benefit from the distributed high throughput 
-computing. 
+High throughput computing is an excellent fit for:
 
+*    Your computation can be split into many independent jobs
+*    Your workflow involves individual jobs be run on a single processor
+*    Your applications can be interrupted and restarted at a later time 
+
+Come to this session to learn all about DHTC and the basics of grid computing.
 
 <div class="toc" markdown="1">
 1.  [Introduction to Open Science Grid](01-IntroGrid.html)
