@@ -3,6 +3,17 @@ layout: lesson
 root: ../..
 title: Programming with Python
 ---
+
+
+>
+>
+>###Place: Bostock Library, 411 Chapel Dr, Durham, NC 27708
+>
+>###Time: 8:30 am - 12.00 pm (part 1) and 1.30 pm - 4.30 pm (part2), Oct 28th 2015
+>
+
+
+
 The best way to learn how to program is to do something useful,
 so this introduction to Python is built around a common scientific task:
 data analysis.
@@ -44,9 +55,11 @@ and to use that language *well*.
 
 <div class="toc" markdown="1">
 
+### Part-1 (9.00 AM - 12.00 PM)
 1.  [Analyzing Patient Data](01-numpy.html)
 2.  [Creating Functions](02-func.html)
 3.  [Analyzing Multiple Data Sets](03-loop.html)
+### Part-2 (1.30 PM - 4.30 PM) 
 4.  [Making Choices](04-cond.html)
 5.  [Defensive Programming](05-defensive.html)
 6.  [Command-Line Programs](06-cmdline.html)
