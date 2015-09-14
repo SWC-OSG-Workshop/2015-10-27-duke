@@ -37,7 +37,7 @@ title: Lessons
 6.  [Command-Line Programs](novice/python/06-cmdline.html)
 7.  [Reference...](novice/ref/03-python.html)
 
-## Unit IV: [Distributed Computing on Open Science Grid](novice/DHTC/index.html)
+## Unit IV: [Distributed High Throughput Computing](novice/DHTC/index.html)
 
 1.  [Introduction to Open Science Grid ](novice/DHTC/01-IntroGrid.html)
 2.  [Software Resources on OSG  ](novice/DHTC/03-OSGtour.html)
