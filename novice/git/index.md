@@ -27,13 +27,13 @@ When several people collaborate in the same project, it's possible to accidental
 Teams are not the only ones to benefit from version control: lone researchers can benefit immensely. Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on (e.g., a year later, when memory has faded).
 
 
-> ## Prerequisites {.prereq}
+> ## Prerequisites
 >
 > In this lesson we use Git from the Unix Shell.
 > Some previous experience with the shell is expected,
 > *but isn't mandatory*.
 
-> ## Getting ready {.getready}
+> ## Getting ready
 >
 > Nothing to do: you're ready to go!
 
