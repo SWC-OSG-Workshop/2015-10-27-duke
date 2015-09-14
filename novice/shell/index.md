@@ -18,7 +18,7 @@ These lessons will start you on a path towards using these resources effectively
 > We will do all the exercises on `login.duke.ci-connect.net`.  If you do not have an account on
 > `duke.ci-connect`, [please sign up](https://duke.ci-connect.net/signup). You also need 
 `SSH` installed on your laptop.  For details, follow [this link](http://swc-osg-workshop.github.io/2015-10-27-duke/setup.html)
-
+>
 > ## Prerequisites
 >
 > This lesson guides you through the basics of file systems and the
@@ -30,7 +30,7 @@ These lessons will start you on a path towards using these resources effectively
 > If you're already comfortable manipulating files and directories,
 > searching for files with `grep` and `find`, and writing simple loops
 > and scripts, you probably won't learn much from this lesson.
-
+>
 > ## Getting ready
 > 
 > You need to download some files to follow this lesson:
@@ -39,7 +39,6 @@ These lessons will start you on a path towards using these resources effectively
 > Download the zipped filesystem by clicking [this link](../../data/filesystem.zip). Unpack the zipped
 > files - on Windows or a Mac, you can probably just double-click or click the downloaded
 > file to unpack it. On linux you can type in a command like
-
 > ~~~
 > $ unzip filesystem.zip
 > ~~~
