@@ -1,7 +1,7 @@
 ---
 layout: lesson
 root: ../..
-title: Distributed Computing on Open Science Grid
+title: Distributed High Throughput Computing
 ---
 
 High throughput computing is an excellent fit for:
@@ -11,6 +11,11 @@ High throughput computing is an excellent fit for:
 *    Your applications can be interrupted and restarted at a later time 
 
 Come to this session to learn all about DHTC and the basics of grid computing.
+> ## Setup Instructions
+> We will do all the exercises on `login.duke.ci-connect.net`.  If you do not have an account on
+> `duke.ci-connect`, [please sign up](https://duke.ci-connect.net/signup). You also need⋅
+`SSH` installed on your laptop.  For details, follow [this link](http://swc-osg-workshop.github.io/2015-10-27-duke/setup.html)
+>
 
 <div class="toc" markdown="1">
 1.  [Introduction to Open Science Grid](01-IntroGrid.html)
