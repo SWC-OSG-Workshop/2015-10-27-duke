@@ -14,13 +14,18 @@ title: Distributed High Throughput Computing
 
 
 
-High throughput computing is an excellent fit for:
 
-*    Your computation can be split into many independent jobs
+*    Your computation splits into many independent jobs
 *    Your workflow involves individual jobs be run on a single processor
-*    Your applications can be interrupted and restarted at a later time 
+*    Your application can be interrupted and restarted at a later time 
 
-Come to this session to learn all about DHTC and the basics of grid computing.
+Come to this session to learn all about DHTC and the basics of grid computing. Learn 
+
+*    what is distributed high throughput computing 
+*    what are the best practices of DHTC
+*    How to split your computation into many independent jobs
+*    How to manage a scientific workflow 
+
 
 > ## Setup Instructions
 > We will do all the exercises on `login.duke.ci-connect.net`.  If you do not have an account on
