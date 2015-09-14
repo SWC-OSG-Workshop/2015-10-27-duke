@@ -32,7 +32,9 @@ These lessons will start you on a path towards using these resources effectively
 >
 > ## Getting ready
 > You need to download some files to follow this lesson:
+>
 > *    Download the zipped filesystem by clicking [this link](../../data/filesystem.zip). 
+>
 > ~~~
 > $ unzip filesystem.zip
 > ~~~
