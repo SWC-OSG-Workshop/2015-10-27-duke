@@ -48,4 +48,3 @@ These lessons will start you on a path towards using these resources effectively
 6.  [Shell Scripts](05-script.html)
 7.  [Finding Things](06-find.html)
 
-</div>
