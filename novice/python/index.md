@@ -21,8 +21,12 @@ to use whatever language your colleagues are using,
 so that you can share your work with them easily,
 and to use that language *well*.
 
-> ## Prerequisites
+> ## Setup Instructions
+> We will do all the exercises on `login.duke.ci-connect.net`.  If you do not have an account on
+> `duke.ci-connect`, [please sign up](https://duke.ci-connect.net/signup). You also need⋅
+`SSH` installed on your laptop.  For details, follow [this link](http://swc-osg-workshop.github.io/2015-10-27-duke/setup.html)
 >
+> ## Prerequisites
 > Learners need to understand the concepts of files and directories
 > (including the working directory) and how to start a Python
 > interpreter before tackling this lesson. This lesson references the Jupyter (IPython)
@@ -30,14 +34,11 @@ and to use that language *well*.
 > this lesson pertain to Python 2.7.
 
 > ## Getting ready
->
 > You need to download some files to follow this lesson:
+> *     Download 
+> *     $ git clone https://github.com/SWC-OSG-Workshop/ExampleData.git
+> *     $ cd Python
 >
-> 1. Make a new folder in your Desktop called `python-novice-inflammation`.
-> 2. Download 
-> $ git clone https://github.com/SWC-OSG-Workshop/ExampleData.git
-> $ cd Python
-
 > We host the IPython server for training here: https://ipython.osgconnect.net
 > (You will need to log in with account and password on login.duke.ci-connect.net)
 
