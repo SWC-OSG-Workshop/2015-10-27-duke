@@ -59,6 +59,7 @@ and to use that language *well*.
 1.  [Analyzing Patient Data](01-numpy.html)
 2.  [Creating Functions](02-func.html)
 3.  [Analyzing Multiple Data Sets](03-loop.html)
+
 ### Part-2 (1.30 PM - 4.30 PM) 
 4.  [Making Choices](04-cond.html)
 5.  [Defensive Programming](05-defensive.html)
