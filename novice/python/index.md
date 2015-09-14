@@ -32,7 +32,7 @@ and to use that language *well*.
 > interpreter before tackling this lesson. This lesson references the Jupyter (IPython)
 > Notebook although it can be taught through any Python interpreter. The commands in this
 > this lesson pertain to Python 2.7.
-
+>
 > ## Getting ready
 > You need to download some files to follow this lesson:
 > *     Download 
