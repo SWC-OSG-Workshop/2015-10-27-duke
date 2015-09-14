@@ -3,6 +3,16 @@ layout: lesson
 root: ../..
 title: Version Control with Git
 ---
+
+
+>
+>
+>###Place: Bostock Library, 411 Chapel Dr, Durham, NC 27708
+>
+>###Time: 1:30 pm - 4.30 pm, Oct 27th 2015
+>
+
+
 Version control is the lab notebook of the digital world:
 it's what professionals use to keep track of what they've done
 and to collaborate with other people.
