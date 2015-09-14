@@ -20,7 +20,6 @@ These lessons will start you on a path towards using these resources effectively
 `SSH` installed on your laptop.  For details, follow [this link](http://swc-osg-workshop.github.io/2015-10-27-duke/setup.html)
 >
 > ## Prerequisites
->
 > This lesson guides you through the basics of file systems and the
 > shell.  If you have stored files on a computer at all and recognize
 > the word “file” and either “directory” or “folder” (two common words
@@ -32,14 +31,8 @@ These lessons will start you on a path towards using these resources effectively
 > and scripts, you probably won't learn much from this lesson.
 >
 > ## Getting ready
-> 
 > You need to download some files to follow this lesson:
-> 
-> 1. Make a new folder in your Desktop called `shell-novice`.
-> Download the zipped filesystem by clicking [this link](../../data/filesystem.zip). Unpack the zipped
-> files - on Windows or a Mac, you can probably just double-click or click the downloaded
-> file to unpack it. On linux you can type in a command like
->
+> *    Download the zipped filesystem by clicking [this link](../../data/filesystem.zip). 
 > ~~~
 > $ unzip filesystem.zip
 > ~~~
