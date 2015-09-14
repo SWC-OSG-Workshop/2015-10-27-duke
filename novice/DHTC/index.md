@@ -11,6 +11,7 @@ High throughput computing is an excellent fit for:
 *    Your applications can be interrupted and restarted at a later time 
 
 Come to this session to learn all about DHTC and the basics of grid computing.
+
 > ## Setup Instructions
 > We will do all the exercises on `login.duke.ci-connect.net`.  If you do not have an account on
 > `duke.ci-connect`, [please sign up](https://duke.ci-connect.net/signup). You also need⋅
