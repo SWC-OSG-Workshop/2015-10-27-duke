@@ -12,6 +12,13 @@ title: Version Control with Git
 >
 >####Time: 1:30 PM - 4.30 PM, Oct 27th 2015
 >
+> This workshop is being run by the [open science grid (OSG)](http://opensciencegrid.org/), in collaboration with⋅
+> [Software Carpentry](http://software-carpentry.org).  The Open Science Grid (OSG) is a national scale distributed⋅
+>  infrastructure for scientific computing.  Software Carpentry's mission is to help scientists and engineers⋅
+>  become more productive by teaching them basic lab skills for computing
+>  like program design, version control, data management, and task automation.
+>
+
 
 
 Version control is the lab notebook of the digital world:
@@ -37,18 +44,18 @@ Version control is better than mailing files back and forth:
 
 Teams are not the only ones to benefit from version control: lone researchers can benefit immensely. Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on (e.g., a year later, when memory has faded).
 
-> ## Setup Instructions
-> We will do all the exercises on `login.duke.ci-connect.net`.  If you do not have an account on
-> `duke.ci-connect`, [please sign up](https://duke.ci-connect.net/signup). You also need⋅
+### Setup Instructions
+ We will do all the exercises on `login.duke.ci-connect.net`.  If you do not have an account on
+ `duke.ci-connect`, [please sign up](https://duke.ci-connect.net/signup). You also need⋅
 `SSH` installed on your laptop.  For details, follow [this link](http://swc-osg-workshop.github.io/2015-10-27-duke/setup.html)
->
-> ## Prerequisites
-> In this lesson we use Git from the Unix Shell.
-> Some previous experience with the shell is expected,
-> *but isn't mandatory*.
+
+### Prerequisites
+ In this lesson we use Git from the Unix Shell.
+ Some previous experience with the shell is expected,
+ *but isn't mandatory*.
 
 <div class="toc" markdown="1">
-
+### Topics
 1.  [Introducing Version Control](00-intro.html)
 2.  [A Better Kind of Backup](01-backup.html)
 3.  [Collaborating](02-collab.html)
