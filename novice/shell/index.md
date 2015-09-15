@@ -11,7 +11,7 @@ title: The Unix Shell
 >
 >####Time: 9:00 AM - 12.00 PM, Oct 27th 2015
 >
-> This workshop is being run by the [open science grid (OSG)](http://opensciencegrid.org/), in collaboration with⋅
+> This Duke-OSG event is being run by the [open science grid (OSG)](http://opensciencegrid.org/), in collaboration with⋅
 > [Software Carpentry](http://software-carpentry.org).  The Open Science Grid (OSG) is a national scale distributed⋅
 >  infrastructure for scientific computing.  Software Carpentry's mission is to help scientists and engineers⋅
 >  become more productive by teaching them basic lab skills for computing
