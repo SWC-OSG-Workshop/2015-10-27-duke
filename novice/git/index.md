@@ -5,11 +5,12 @@ title: Version Control with Git
 ---
 
 
+>  
+>####Registration: [Please visit the OIT website ](http://training.oit.duke.edu/research)
 >
+>####Place: The Edge Workshop Room, Bostock Library, Duke University
 >
->###Place: The Edge Workshop Room, Bostock Library, Duke University
->
->###Time: 1:30 PM - 4.30 PM, Oct 27th 2015
+>####Time: 1:30 PM - 4.30 PM, Oct 27th 2015
 >
 
 

@@ -6,9 +6,11 @@ title: Programming with Python
 
 
 >
->###Place: The Edge Workshop Room, Bostock Library, Duke University
+>####Registration: [Please visit the OIT website ](http://training.oit.duke.edu/research)
 >
->###Time: 9:00 AM - 12.00 PM (part 1) and 1.30 PM - 4.30 PM (part2), Oct 28th 2015
+>####Place: The Edge Workshop Room, Bostock Library, Duke University
+>
+>####Time: 9:00 AM - 12.00 PM (part 1) and 1.30 PM - 4.30 PM (part2), Oct 28th 2015
 >
 
 
