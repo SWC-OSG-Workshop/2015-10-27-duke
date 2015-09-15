@@ -7,9 +7,9 @@ title: Version Control with Git
 
 >
 >
->###Place: Bostock Library, 411 Chapel Dr, Durham, NC 27708
+>###Place: The Edge Workshop Room, Bostock Library, Duke University
 >
->###Time: 1:30 pm - 4.30 pm, Oct 27th 2015
+>###Time: 1:30 PM - 4.30 PM, Oct 27th 2015
 >
 
 

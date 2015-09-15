@@ -7,9 +7,9 @@ title: Distributed High Throughput Computing
 
 >
 >
->###Place: Bostock Library, 411 Chapel Dr, Durham, NC 27708
+>###Place: The Edge Workshop Room, Bostock Library, Duke University
 >
->###Time: 8:30 am - 12.00 pm (part 1) and 1.30 pm - 4.30 pm (part2), Oct 29th 2015
+>###Time: 9:00 AM - 12.00 PM (part 1) and 1.30 PM - 4.30 PM (part2), Oct 29th 2015
 >
 
 Come to this session to learn all about DHTC and the basics of grid computing. For example, 
@@ -29,14 +29,13 @@ Come to this session to learn all about DHTC and the basics of grid computing. F
 <div class="toc" markdown="1">
 ### Part-1 (9.00 AM - 12.00 PM)
 1.  [Introduction to Open Science Grid](01-IntroGrid.html)
-2.  [Getting access to OSG ](02-ssh.html)
-3.  [Software Resources on OSG](03-OSGtour.html)
-4.  [Submitting Jobs  - HTCondor](04-HTCondor-Submitting.html)
-9.  [Troubleshooting](07-TroubleShooting.html)
+2.  [Software Resources on OSG](03-OSGtour.html)
+3.  [Submitting Jobs  - HTCondor](04-HTCondor-Submitting.html)
+4.  [Troubleshooting](07-TroubleShooting.html)
+5.  [Data Storage and Transfer](05-Stash.html)
 
 ### Part-2 (1.30 PM - 4.30 PM)⋅
-5.  [Scaling Up Resources and MATLAB runtime](04a-ScalingUp.html)
-6.  [Data Storage and Transfer](05-Stash.html)
+6.  [Scaling Up Resources and MATLAB runtime](04a-ScalingUp.html)
 7.  [Workflow Management - DAGMan](06-dagman-namd.html)
 8.  [Workflow Management - Pegasus](optional) (06a-pegasus-namd.html) 
 </div>

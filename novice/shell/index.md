@@ -5,10 +5,9 @@ title: The Unix Shell
 ---
 
 >
+>###Place: The Edge Workshop Room, Bostock Library, Duke University
 >
->###Place: Bostock Library, 411 Chapel Dr, Durham, NC 27708
->
->###Time: 8:30 am - 12.00 pm, Oct 27th 2015
+>###Time: 9:00 AM - 12.00 PM, Oct 27th 2015
 >
 
 The Unix shell has been around longer than most of its users have been alive.

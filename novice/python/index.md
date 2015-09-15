@@ -6,10 +6,9 @@ title: Programming with Python
 
 
 >
+>###Place: The Edge Workshop Room, Bostock Library, Duke University
 >
->###Place: Bostock Library, 411 Chapel Dr, Durham, NC 27708
->
->###Time: 8:30 am - 12.00 pm (part 1) and 1.30 pm - 4.30 pm (part2), Oct 28th 2015
+>###Time: 9:00 AM - 12.00 PM (part 1) and 1.30 PM - 4.30 PM (part2), Oct 28th 2015
 >
 
 
