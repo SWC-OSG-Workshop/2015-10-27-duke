@@ -6,6 +6,7 @@ title: Distributed High Throughput Computing
 
 
 >
+>###Registration: [Please visit](http://training.oit.duke.edu/research)
 >
 >###Place: The Edge Workshop Room, Bostock Library, Duke University
 >
