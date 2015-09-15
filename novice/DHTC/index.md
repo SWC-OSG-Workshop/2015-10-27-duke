@@ -6,7 +6,7 @@ title: Distributed High Throughput Computing
 
 
 >
->####Registration: [Please visit the OIT website ](http://training.oit.duke.edu/research)
+>####Registration: [Please visit the OIT website ]( https://training.oit.duke.edu/enroll/index.php/public_research/show/1377)
 >
 >####Place: The Edge Workshop Room, Bostock Library, Duke University
 >
@@ -40,9 +40,9 @@ Come to this session to learn all about DHTC and the basics of grid computing. F
 2.  [Software Resources on OSG](03-OSGtour.html)
 3.  [Submitting Jobs  - HTCondor](04-HTCondor-Submitting.html)
 4.  [Troubleshooting](07-TroubleShooting.html)
-5.  [Data Storage and Transfer](05-Stash.html)
 
 ### Part-2 (1.30 PM - 4.30 PM)⋅
+5.  [Data Storage and Transfer](05-Stash.html)
 6.  [Scaling Up Resources and MATLAB runtime](04a-ScalingUp.html)
 7.  [Workflow Management - DAGMan](06-dagman-namd.html)
 8.  [Workflow Management - Pegasus (optional)](06a-pegasus-namd.html) 
