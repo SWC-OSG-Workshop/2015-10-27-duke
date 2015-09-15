@@ -38,5 +38,6 @@ Come to this session to learn all about DHTC and the basics of grid computing. F
 ### Part-2 (1.30 PM - 4.30 PM)⋅
 6.  [Scaling Up Resources and MATLAB runtime](04a-ScalingUp.html)
 7.  [Workflow Management - DAGMan](06-dagman-namd.html)
-8.  [Workflow Management - Pegasus](optional) (06a-pegasus-namd.html) 
+8.  [Workflow Management - Pegasus (optional)](06a-pegasus-namd.html) 
+
 </div>
