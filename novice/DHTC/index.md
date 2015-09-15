@@ -6,11 +6,11 @@ title: Distributed High Throughput Computing
 
 
 >
->###Registration: [Please visit](http://training.oit.duke.edu/research)
+>####Registration: [Please visit](http://training.oit.duke.edu/research)
 >
->###Place: The Edge Workshop Room, Bostock Library, Duke University
+>####Place: The Edge Workshop Room, Bostock Library, Duke University
 >
->###Time: 9:00 AM - 12.00 PM (part 1) and 1.30 PM - 4.30 PM (part2), Oct 29th 2015
+>####Time: 9:00 AM - 12.00 PM (Part-1) and 1.30 PM - 4.30 PM (Part-2), Oct 29th 2015
 >
 
 Come to this session to learn all about DHTC and the basics of grid computing. For example, 
