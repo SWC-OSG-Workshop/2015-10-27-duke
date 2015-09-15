@@ -17,6 +17,7 @@ title: Distributed High Throughput Computing
 >  infrastructure for scientific computing.  Software Carpentry's mission is to help scientists and engineers 
 >  become more productive by teaching them basic lab skills for computing
 >  like program design, version control, data management, and task automation.
+>
 
 
 Come to this session to learn all about DHTC and the basics of grid computing. For example, 
@@ -27,11 +28,11 @@ Come to this session to learn all about DHTC and the basics of grid computing. F
 *    How to manage a scientific workflow 
 
 
-> ## Setup Instructions
-> We will do all the exercises on `login.duke.ci-connect.net`.  If you do not have an account on
-> `duke.ci-connect`, [please sign up](https://duke.ci-connect.net/signup). You also need⋅
+## Setup Instructions
+ We will do all the exercises on `login.duke.ci-connect.net`.  If you do not have an account on
+ `duke.ci-connect`, [please sign up](https://duke.ci-connect.net/signup). You also need⋅
 `SSH` installed on your laptop.  For details, follow [this link](http://swc-osg-workshop.github.io/2015-10-27-duke/setup.html)
->
+
 
 <div class="toc" markdown="1">
 ### Part-1 (9.00 AM - 12.00 PM)
