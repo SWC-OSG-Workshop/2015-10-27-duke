@@ -28,7 +28,7 @@ Come to this session to learn all about DHTC and the basics of grid computing. F
 *    How to manage a scientific workflow 
 
 
-## Setup Instructions
+### Setup Instructions
  We will do all the exercises on `login.duke.ci-connect.net`.  If you do not have an account on
  `duke.ci-connect`, [please sign up](https://duke.ci-connect.net/signup). You also need⋅
 `SSH` installed on your laptop.  For details, follow [this link](http://swc-osg-workshop.github.io/2015-10-27-duke/setup.html)
