@@ -6,7 +6,7 @@ title: Distributed High Throughput Computing
 
 
 >
->####Registration: [Please visit the OIT website ]( https://training.oit.duke.edu/enroll/index.php/public_research/show/1377)
+>####Registration: [Please visit the OIT website ](https://training.oit.duke.edu/enroll/index.php/public_research/show/1377)
 >
 >####Place: The Edge Workshop Room, Bostock Library, Duke University
 >
@@ -38,13 +38,14 @@ Come to this session to learn all about DHTC and the basics of grid computing. F
 ### Part-1 (9.00 AM - 12.00 PM)
 1.  [Introduction to Open Science Grid](01-IntroGrid.html)
 2.  [Software Resources on OSG](03-OSGtour.html)
-3.  [Submitting Jobs  - HTCondor](04-HTCondor-Submitting.html)
-4.  [Troubleshooting](07-TroubleShooting.html)
+3.  [Job Scheduling with HTCondor](04-HTCondor-Submitting.html)
+4.  [Trouble Shooting Failed Jobs ](07-TroubleShooting.html)
+5.  [Connecting the Campus to the Grid Resources]
 
 ### Part-2 (1.30 PM - 4.30 PM)⋅
-5.  [Data Storage and Transfer](05-Stash.html)
-6.  [Scaling Up Resources and MATLAB runtime](04a-ScalingUp.html)
-7.  [Workflow Management - DAGMan](06-dagman-namd.html)
-8.  [Workflow Management - Pegasus (optional)](06a-pegasus-namd.html) 
+6.  [Handling Data](05-Stash.html)
+7.  [Scaling Up Computing Resources (R and MATLAB examples)](04a-ScalingUp.html)
+8.  [Handling Job Dependencies - DAGMan](06-dagman-namd.html)
+9.  [Large Scale Computation with  Pegasus](06a-pegasus-namd.html) 
 
 </div>
