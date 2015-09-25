@@ -43,9 +43,9 @@ title: Lessons
 2.  [Submitting Jobs  - HTCondor ](novice/DHTC/04-HTCondor-Submitting.html)
 3.  [Troubleshooting ](novice/DHTC/07-TroubleShooting.html)
 4.  [Data Storage and Transfer ](novice/DHTC/05-Stash.html)
-5.  [Scaling Up Resources and MATLAB runtime execution](novice/DHTC/04a-ScalingUp.html)
-6.  [Workflow Management - DAGMan ](novice/DHTC/06-dagman-namd.html)
-8.  [Workflow Management - Pegasus (optional) ](novice/DHTC/06a-pegasus-namd.html)
+5.  [Scaling Up Resources - R and MATLAB runtime examples](novice/DHTC/04a-ScalingUp.html)
+6.  [Handling Job Dependencies - DAGMan](novice/DHTC/06-dagman-namd.html)
+8.  [Large Scale Computation with Pegasus (optional) ](novice/DHTC/06a-pegasus-namd.html)
 
 ## Further Materials
 
