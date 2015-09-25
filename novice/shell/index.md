@@ -51,9 +51,7 @@ SSH` installed on your laptop.  For details, follow [this link](http://swc-osg-w
 
  *    Download the zipped filesystem by clicking [this link](../../data/filesystem.zip). 
 
- ~~~
- $ unzip filesystem.zip
- ~~~
+     $ unzip filesystem.zip
 
 ### Topics
 #### Instructor: Emelie
