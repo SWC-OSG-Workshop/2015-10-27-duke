@@ -40,12 +40,11 @@ title: Lessons
 ## Unit IV: [Distributed High Throughput Computing](novice/DHTC/index.html)
 
 1.  [Introduction to Open Science Grid ](novice/DHTC/01-IntroGrid.html)
-2.  [Software Resources on OSG  ](novice/DHTC/03-OSGtour.html)
-3.  [Submitting Jobs  - HTCondor ](novice/DHTC/04-HTCondor-Submitting.html)
-4.  [Troubleshooting ](novice/DHTC/07-TroubleShooting.html)
-5.  [Data Storage and Transfer ](novice/DHTC/05-Stash.html)
-6.  [Scaling Up Resources and MATLAB runtime execution](novice/DHTC/04a-ScalingUp.html)
-7.  [Workflow Management - DAGMan ](novice/DHTC/06-dagman-namd.html)
+2.  [Submitting Jobs  - HTCondor ](novice/DHTC/04-HTCondor-Submitting.html)
+3.  [Troubleshooting ](novice/DHTC/07-TroubleShooting.html)
+4.  [Data Storage and Transfer ](novice/DHTC/05-Stash.html)
+5.  [Scaling Up Resources and MATLAB runtime execution](novice/DHTC/04a-ScalingUp.html)
+6.  [Workflow Management - DAGMan ](novice/DHTC/06-dagman-namd.html)
 8.  [Workflow Management - Pegasus (optional) ](novice/DHTC/06a-pegasus-namd.html)
 
 ## Further Materials
