@@ -56,6 +56,7 @@ SSH` installed on your laptop.  For details, follow [this link](http://swc-osg-w
  ~~~
 
 ### Topics
+#### Instructor: Emelie
 1.  [Introducing the Shell](00-intro.html)
 2.  [Files and Directories](01-filedir.html)
 3.  [Creating Things](02-create.html)
