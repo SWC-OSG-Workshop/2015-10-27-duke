@@ -1,7 +1,7 @@
 ---
 layout: lesson
 root: ../..
-title: Scaling up compute resources
+title: Scaling up compute resources - R and MATLAB runtime examples. 
 ---
 <div class="objectives" markdown="1">
 
@@ -25,7 +25,7 @@ numbers of jobs to realizing the full potential of distributed high
 throughput computing on the OSG.
 
 In this section, we will see how to scale up the calculations with
-simple example. Once we understand the basic HTCondor script, it is easy
+simple examples. The examples are based on R and MATLAB Runtime. Once we understand the basic HTCondor script, it is easy
 to scale up.
 
 ~~~
@@ -155,15 +155,14 @@ cinvestav.mx                      |1 (1.00%)   ▊
 
 ## MATLAB Overview
 
-[MATLAB®](http://www.mathworks.com/products/matlab/) is a licensed high level language and interactive modeling and development toolkit. The [MATLAB Compiler™](http://www.mathworks.com/products/compiler/) lets you share MATLAB programs as standalone applications.  All applications created with MATLAB Compiler use [MATLAB Runtime™ (MCR)](http://www.mathworks.com/products/compiler/mcr/), which enables royalty-free deployment and use.⋅⋅
+[MATLAB®](http://www.mathworks.com/products/matlab/) is a licensed high level language and interactive modeling and development toolkit. The [MATLAB Compiler™](http://www.mathworks.com/products/compiler/) lets you share MATLAB programs as standalone applications.  All applications created with MATLAB Compiler use [MATLAB Runtime™ (MCR)](http://www.mathworks.com/products/compiler/mcr/), which enables royalty-free deployment and use. 
 
 MATLAB Compiler is invoked with `mcc`.  Most toolboxes and user-developed interfaces are supported. For more details, check the list of [supported toolboxes](http://www.mathworks.com/products/compiler/supported/compiler_support.html) and⋅
-[ineligible programs](http://www.mathworks.com/products/ineligible_programs/).⋅
+[ineligible programs](http://www.mathworks.com/products/ineligible_programs/).  MATLAB Runtime is available on all OSG 
+sites using the OASIS software service using `module` commands.
 
-OSG Connect has several MATLAB releases installed, and MATLAB Runtime is available on all OSG sites using the OASIS software service using `module` commands.
 
-
-[MATLAB's Optimization Toolbox](http://www.mathworks.com/products/optimization/) tackles wide variety of solvers such as linear programming, mixed-integer linear programming, quadratic programming, nonlinear optimization. In this tutorial, we learn how to use simulated annealing to find the minimum of a function. The test function is the well known Rosenbrock function.⋅
+[MATLAB's Optimization Toolbox](http://www.mathworks.com/products/optimization/) tackles wide variety of solvers such as linear programming, mixed-integer linear programming, quadratic programming, nonlinear optimization. In this tutorial, we learn how to use simulated annealing to find the minimum of a function. The test function is the well known Rosenbrock function. 
 
 
 ![fig 1](https://raw.githubusercontent.com/OSGConnect/tutorial-matlab-SimulatedAnnealing/master/Figs/RosenBrockFunction.png)
@@ -282,7 +281,8 @@ output values and numerically sort them according to function values.⋅
 
 
 ## Getting Help
-For assistance or questions, please email the OSG User Support team  at [user-support@opensciencegrid.org](mailto:user-support@opensciencegrid.org) or visit the [help desk and community forums](http://support.opensciencegrid.org).
+For assistance or questions, please email the OSG User Support team  at [user-support@opensciencegrid.org](mailto:user-support@opensciencegrid.org) or visit the [help desk and community forums](http://support.opensciencegrid.org). 
+
 
 
 <div class="keypoints" markdown="1">
