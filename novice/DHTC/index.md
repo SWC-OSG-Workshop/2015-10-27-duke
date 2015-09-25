@@ -37,15 +37,14 @@ Come to this session to learn all about DHTC and the basics of grid computing. F
 <div class="toc" markdown="1">
 ### Part-1 (9.00 AM - 12.00 PM)
 1.  [Introduction to Open Science Grid](01-IntroGrid.html)
-2.  [Software Resources on OSG](03-OSGtour.html)
-3.  [Job Scheduling with HTCondor](04-HTCondor-Submitting.html)
-4.  [Trouble Shooting Failed Jobs ](07-TroubleShooting.html)
-5.  [Connecting the Campus to the Grid Resources]
+2.  [Job Scheduling with HTCondor](04-HTCondor-Submitting.html)
+3.  [Trouble Shooting Failed Jobs ](07-TroubleShooting.html)
+4.  [Connecting the Campus to the Grid Resources]
 
 ### Part-2 (1.30 PM - 4.30 PM)⋅
-6.  [Handling Data](05-Stash.html)
-7.  [Scaling Up Computing Resources (R and MATLAB runtime examples)](04a-ScalingUp.html)
-8.  [Handling Job Dependencies - DAGMan](06-dagman-namd.html)
-9.  [Large Scale Computation with  Pegasus](06a-pegasus-namd.html) 
+5.  [Handling Data](05-Stash.html)
+6.  [Scaling Up Computing Resources - R and MATLAB runtime examples](04a-ScalingUp.html)
+7.  [Handling Job Dependencies - DAGMan](06-dagman-namd.html)
+8.  [Large Scale Computation with  Pegasus](06a-pegasus-namd.html) 
 
 </div>
