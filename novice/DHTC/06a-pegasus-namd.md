@@ -1,7 +1,7 @@
 ---
 layout: lesson
 root: ../..
-title: Workflow Management - Pegasus
+title: Large Scale Computation with Pegasus
 ---
 <div class="objectives" markdown="1">
 

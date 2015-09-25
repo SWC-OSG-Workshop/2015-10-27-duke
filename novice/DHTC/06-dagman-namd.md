@@ -1,7 +1,7 @@
 ---
 layout: lesson
 root: ../..
-title: Workflow Management - DAGMan
+title: Handling Job Dependencies - DAGMan
 ---
 <div class="objectives" markdown="1">
 
