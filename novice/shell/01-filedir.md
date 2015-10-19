@@ -25,6 +25,7 @@ the zipped filesystem using wget:
 ~~~
 $ wget http://swc-osg-workshop.github.io/2015-10-27-duke/data/filesystem.zip
 ~~~
+{:class="in"}
 
 Alternatively, if you are doing these exercises on your local workstation, you can download the filesystem by clicking [this link](../../data/filesystem.zip). 
 
