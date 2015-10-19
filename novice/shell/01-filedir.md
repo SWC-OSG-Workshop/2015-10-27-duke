@@ -19,8 +19,16 @@ title: Files and Directories
 
 In these lessons, we're going to explore Nelle's files.
 You can optionally download the example files and directories which Nelle is using,
-so that you can explore the same files as described in the lesson. To do this, download
-the zipped filesystem by clicking [this link](../../data/filesystem.zip). Unpack the zipped
+so that you can explore the same files as described in the lesson. To do this, log into your account on <code>login.duke.ci-connect.net</code> and download
+the zipped filesystem using wget:
+
+~~~
+$ wget http://swc-osg-workshop.github.io/2015-10-27-duke/data/filesystem.zip
+~~~
+
+Alternatively, if you are doing these exercises on your local workstation, you can download the filesystem by clicking [this link](../../data/filesystem.zip). 
+
+Unpack the zipped
 files - on Windows or a Mac, you can probably just double-click or click the downloaded
 file to unpack it. On linux you can type in a command like
 
