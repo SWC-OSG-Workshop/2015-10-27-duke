@@ -451,7 +451,8 @@ but not yet committed.
 `git add` puts things in this area,
 and `git commit` then copies them to long-term storage (as a commit):
 
-<img src="img/git-staging-area.svg" alt="The Git Staging Area" />
+
+<img src="img2/git-staging-area.svg" alt="The Git Staging Area" />
 
 Let's watch as our changes to a file move from our editor
 to the staging area
