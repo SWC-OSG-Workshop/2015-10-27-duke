@@ -225,8 +225,46 @@ The built-in `tutorial` command assists a user in getting started on
 OSG.  To see the list of existing tutorials, type
 
 ~~~
-$ tutorial # will print a list tutorials
+$ tutorial
+usage: tutorial list                 - show available tutorials
+       tutorial info <tutorial-name> - show details of a tutorial
+       tutorial <tutorial-name>      - set up a tutorial
+
+Currently available tutorials:
+R ..................... Estimate Pi using the R programming language
+cp2k .................. How-to for the electronic structure package CP2K
+dagman-namd ........... Launch a series of NAMD simulations via Condor DAG
+error101 .............. Use condor_q -better-analyze to analyze stuck jobs
+exitcode .............. Use HTCondor's periodic_release to retry failed jobs
+htcondor-transfer ..... Transfer data via HTCondor's own mechanisms
+namd .................. Run a molecular dynamics simulation using NAMD
+oasis-parrot .......... Software access with OASIS and Parrot
+octave ................ Matrix manipulation via the Octave programming language
+pegasus ............... An introduction to the Pegasus job workflow manager
+photodemo ............. A complete analysis workflow using HTTP transfer
+quickstart ............ How to run your first OSG job
+root .................. Inspect ntuples using the ROOT analysis framework
+scaling ............... Learn to steer jobs to particular resources
+scaling-up-resources .. A simple multi-job demonstration
+software .............. Software access tutorial
+stash-chirp ........... Use the chirp I/O protocol for remote data access
+stash-http ............ Retrieve job input files from Stash via HTTP
+stash-namd ............ Provide input files for NAMD via Stash's HTTP interface
+swift ................. Introduction to the SWIFT parallel scripting language
+
+Enter "tutorial name-of-tutorial" to clone and try out a tutorial.
 ~~~
+
+Each of these rows above is a tutorial that you can work through on your
+own, after the workshop.  We add new tutorials from time to time, as well.
+Each tutorial has a `README.md` file within that gives teaching material
+on what the tutorial is trying to illustrate, and you can read them online
+at the [OSG Connectbook](http://osgconnect.net/book).
+
+Note the word _clone_ in that last line of output.  There's no mistake
+that it's the same term as we used for copying a git repository.  Each
+tutorial is version-controlled, and actually resides on GitHub.  When
+you use the `tutorial` command you're getting content from there.
 
 Say for example, you are interested in learning how to run R scripts on OSG, the 
 tutorial command sets up the R tutorial for you. 
