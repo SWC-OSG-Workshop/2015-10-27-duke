@@ -22,8 +22,8 @@ describe how to execute the program and transfer the output data.
 First, we log in to OSG Connect:
 
 ~~~
-$ ssh username@login.osgconnect.net  # username is your username
-password:                            # enter your password
+$ ssh username@ login.duke.ci-connect.net  # username is your username
+password:                                  # enter your password
 ~~~
 
 Let's introduce two commands that will be useful throughout your OSG Connect
@@ -194,7 +194,7 @@ $ ./short.sh
 ~~~
 Start time: Wed Aug 21 09:21:35 CDT 2013
 
-Job is running on node: login01.osgconnect.net
+Job is running on node: login.duke.ci-connect.net
 
 Job running as user: uid=54161(username) gid=1000(users) groups=1000(users),0(root),1001(osg-connect),1002(osg-staff),1003(osg-connect-test),9948(staff),19012(osgconnect)
 
@@ -256,7 +256,7 @@ jobs by adding your own username to the command.
 
 ~~~
 $ condor_q username
--- Submitter: login01.osgconnect.net : <128.135.158.173:43606> : login01.osgconnect.net
+-- Submitter: login.duke.ci-connect.net : <128.135.158.173:43606> : login.duke.ci-connect.net
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
  823.0   username           8/21 09:46   0+00:00:06 R  0   0.0  short.sh
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
@@ -268,7 +268,7 @@ cluster -- the number that `condor_submit` gave you.
 
 ~~~
 $ condor_q 823
--- Submitter: login01.osgconnect.net : <128.135.158.173:43606> : login01.osgconnect.net
+-- Submitter: login.duke.ci-connect.net : <128.135.158.173:43606> : login.duke.ci-connect.net
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
  823.0   username           8/21 09:46   0+00:00:10 R  0   0.0  short.sh
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
