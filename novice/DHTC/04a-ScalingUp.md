@@ -18,15 +18,15 @@ sampling for a multi-dimensional Monte Carlo integration or molecular
 dynamics simulation with several initial conditions. These type of
 calculations require submitting lot of jobs.
 
-In the previous example, we submitted the job to a single worker
+In one of the previous example, we submitted the job to a single worker
 machine. About a million CPU hours per day are available to OSG users
 on an opportunistic basis.  Learning how to scale up and control large
-numbers of jobs to realizing the full potential of distributed high
+number of jobs is important to realizing the full potential of distributed high
 throughput computing on the OSG.
 
 In this section, we will see how to scale up the calculations with
-simple examples. The examples are based on R and MATLAB Runtime. Once we understand the basic HTCondor script, it is easy
-to scale up.
+simple examples. The examples are based on R and MATLAB Runtime. Once we understand 
+the basic HTCondor script, it is easy to scale up.
 
 ~~~
 $ tutorial ScalingUp-R
@@ -34,8 +34,7 @@ $ cd ScalingUp-R
 ~~~
 
 As we discussed in the previous section on HTCondor scripts, we need to
-prepare the job execution and the job submission scripts. Here again
-is our job execution script:
+prepare the job execution script and the job submission file.
 
 ## Submitting jobs concurrently
 
@@ -96,18 +95,18 @@ to compute the average value of pi from all the available outputs.
 
 ## Interlude: utilization plots
 
-Before we continue, let's look at a URL: [your OSG Connect home
-page](http://osgconnect.net/home).  If you have not signed in, you'll be
+Before we continue, let's look at a URL: [your Duke CI Connect home
+page](https://duke.ci-connect.net/).  If you have not signed in, you'll be
 redirected back to the main site.  Sign In as you did the first time you
 signed up, and then click again on the
-[your OSG Connect home link](http://osgconnect.net/home).
+[your Duke CI Connect home link](https://duke.ci-connect.net/home).
 
 You see a number of graphs and plots here showing things happening
 in OSG Connect.  We'll go over these briefly, then return later.
 
 ## Connect Histogram 
 
-We're waiting on 1,000 jobs.  Let's use `connect watch` to
+We're waiting on 100 jobs.  Let's use `connect watch` to
 watch for job completions.  As soon as you see some jobs enter R state
 (running), press control-C, and let's introduce a new command:
 
@@ -151,6 +150,17 @@ LCS-215-021-S2-its-c6-osg-20141013|3 (3.00%)   ██
 cinvestav.mx                      |1 (1.00%)   ▊
 ~~~
 
+## Post process 
+
+Once the jobs are completed, you might want to invoke the script 
+
+~~~
+$mcpi_ave.bash
+~~~
+
+to compute the average value of pi from all the available outputs.  
+
+
 # Optimization Tool box: Simulated Annealing
 
 ## MATLAB Overview
@@ -172,8 +182,8 @@ Fig.1. Two dimensional Rosenbrock function along x-y plane.⋅⋅
 
 It is easiest to start with the `tutorial` command. In the command prompt, type
 
-▷⋅⋅⋅ $ tutorial tutorial-matlab-SimulatedAnnealing # Copies input and script files to the directory tutorial-matlab-SimulatedAnnealing.
-⋅
+    $ tutorial tutorial-matlab-SimulatedAnnealing # Copies input and script files to the directory tutorial-matlab-SimulatedAnnealing.
+
 This will create a directory `tutorial-matlab-SimulatedAnnealing`. Inside the directory, you will see the following files
 
     SA_Opt.m               # matlab script - simulated annealing optimization of the function `simple_objective.m`
@@ -192,7 +202,9 @@ Lets take a look at the objective function that takes an argument of an array x.
     function y = simple_objective(x)
          y = (1-x(1))^2 + 100*(x(2)-x(1)^2)^2;
 
-The objective function is defined in the matlab file `simple_objective.m`.⋅
+The objective function is defined in the matlab file `simple_objective.m`. The two dimensional Rosenbrock 
+function defined here has a minimum at `(1,1)`. Rosenbrock function is one of the test function used to test 
+the robustness of an optimization method. Now let us see how the simulated annealing performs. 
 
 ## MATLAB script - Optimization
 The simulated annealing script calls the objective function and optimizes via `simulannealbnd`.⋅
@@ -216,15 +228,18 @@ The simulated annealing script calls the objective function and optimizes via `s
 In the above script, the optimizatoin is repeated for five times with random intial conditions.⋅
 
 ## MATLAB runtime execution
-As mentioned in the [lesson on basics of MATLAB compilation] (https://support.opensciencegrid.org/support/solutions/articles/5000660751-basics-of-compiled-matlab-applications-hello-world-example), we need to compile the matlab script on a machine with license.  At present, we don't have license for matlab on OSG-Conect. On a⋅
-machine with matlab license, invoke the compiler `mcc`. It is important to turn off all⋅
-graphical options (-nodisplay), disable Java (-nojvm), and instruct MATLAB to run this⋅
-program as a single-threaded application (-singleCompThread). The flag -m means `c` language translation during compilation.⋅
+We need to compile the matlab script on a machine with license. At present, we don't have license 
+for matlab on OSG-Conect. On a⋅machine with matlab license, invoke the compiler `mcc`. It is 
+important to turn off all⋅ graphical options (-nodisplay), disable Java (-nojvm), and instruct MATLAB to run this⋅
+program as a single-threaded application (-singleCompThread). The flag -m means `c` language 
+translation during compilation.  
 
     mcc -m -R -singleCompThread -R -nodisplay -R -nojvm SA_Opt.m
 
 would produce the files: `SA_Opt, run_SA_Opt.sh, mccExcludedFiles.log and readme.txt`.  The file `SA_Opt`⋅
 is the compiled binary file that we would like to run on OSG Connect.⋅
+
+Check  further details of compilation process in the [lesson on basics of MATLAB compilation] (https://support.opensciencegrid.org/support/solutions/articles/5000660751-basics-of-compiled-matlab-applications-hello-world-example), we need to compile the matlab script on a machine with license.
 
 ## Job execution and submission files
 
@@ -257,23 +272,23 @@ The executable is a wrapper⋅ script `SA_Opt.sh`
     ./SA_Opt $1
 
 that loads the module `matlab/2014b` and executes the MATLAB compiled binary `SA_Opt`. The only required⋅
-argument is a numerical⋅label that would be attached with the name of the output file.⋅
+argument is a numerical label that would be attached with the name of the output file. 
 
 
-## Job submision⋅
+## Job submision 
 
 We submit the job using `condor_submit` command as follows
 
-▷⋅⋅⋅$ condor_submit SA_Opt.submit //Submit the condor job description file "SA_Opt.submit"
+    $ condor_submit SA_Opt.submit //Submit the condor job description file "SA_Opt.submit"
 
 Now you have submitted the an ensemble of 10 jobs. The jobs should be finished quickly (less than an hour). You can check the status of the submitted job by using the `condor_q` command as follows
 
-▷⋅⋅⋅$ condor_q username  # The status of the job is printed on the screen. Here, username is your login name.
-
+    $ condor_q username  # The status of the job is printed on the screen. Here, username is your login name.
 
 Each job produce rosen-sa-opt$(Process).dat file, where $(Process) is the process ID that runs from 0 to 9.⋅
 
-## Post process⋅
+## Post process 
+
 After all jobs finished, we want to gather the output data. The script `post-script.bash` gathers the⋅
 output values and numerically sort them according to function values.⋅
 
@@ -284,7 +299,6 @@ output values and numerically sort them according to function values.⋅
 For assistance or questions, please email the OSG User Support team  at [user-support@opensciencegrid.org](mailto:user-support@opensciencegrid.org) or visit the [help desk and community forums](http://support.opensciencegrid.org). 
 
 
-
 <div class="keypoints" markdown="1">
 
 #### Key Points
@@ -293,5 +307,5 @@ For assistance or questions, please email the OSG User Support team  at [user-su
 *    *Arguments* allows you to pass parameters to a job script.
 *    $(Cluster) and $(Process) can be used to name log files uniquely.
 *    `connect histogram` gives a nice plot of resource assignments.
-*    Your OSG Connect home page gives other useful plots.
+*    Your Duke CI Connect home page gives other useful plots.
 </div>
