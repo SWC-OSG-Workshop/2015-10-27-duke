@@ -111,7 +111,6 @@ nothing to commit (create/copy files and use "git add" to track)
 
 
 ####Challenges
-<div class="challenge" markdown="1">
 
 > Dracula starts a new project, `moons`, related to his `planets` project.
 > Despite Wolfman's concerns, he enters the following sequence of commands to
@@ -126,42 +125,40 @@ nothing to commit (create/copy files and use "git add" to track)
 >  cd moons       # go into planets/moons
 >  git init       # make the moons sub-directory a Git repository
 > ~~~
-> 
 > Why is it a bad idea to do this?
 > How can Dracula "undo" his last `git init`?
 </div>
 
-<div class="challenge" markdown="1">
-<h4 id="challenges">Challenges</h4>
 
- Which command(s) below would save the changes of `myfile.txt` to my local Git repository?
-
-1. 
-
-~~~
-$ git commit -m "my recent changes"
-~~~
-
-2.
-
-~~~
-$ git init myfile.txt
-$ git commit -m "my recent changes"
-~~~
-
-3.⋅
-
-~~~
-$ git add myfile.txt
-$ git commit -m "my recent changes"
-~~~
-
-4.⋅
-
-~~~
-$ git commit -m myfile.txt "my recent changes"
-~~~
-</div> 
+####Challenges
+> Which command(s) below would save the changes of `myfile.txt` to my local Git repository?
+>
+>1. 
+>
+>~~~
+>$ git commit -m "my recent changes"
+>~~~
+>
+>2.
+>
+>~~~
+>$ git init myfile.txt
+>$ git commit -m "my recent changes"
+>~~~
+>
+>3.⋅
+>
+>~~~
+>$ git add myfile.txt
+>$ git commit -m "my recent changes"
+>~~~
+>
+>4.⋅
+>
+>~~~
+>$ git commit -m myfile.txt "my recent changes"
+>~~~
+>
 
 ## Tracking Changes to Files
 
