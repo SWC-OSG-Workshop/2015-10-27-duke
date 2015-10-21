@@ -109,7 +109,10 @@ nothing to commit (create/copy files and use "git add" to track)
 ~~~
 {:class="out"}
 
-<div class="challenge" markdown="1">
+
+<div class="challenges">
+<h4 id="challenges">Challenges</h4>
+<ol>
 
  Dracula starts a new project, `moons`, related to his `planets` project.
  Despite Wolfman's concerns, he enters the following sequence of commands to
@@ -127,9 +130,13 @@ nothing to commit (create/copy files and use "git add" to track)
 
 Why is it a bad idea to do this?
 How can Dracula "undo" his last `git init`?
+</ol>
 </div>
 
-<div class="challenge" markdown="1">
+
+<div class="challenges">
+<h4 id="challenges">Challenges</h4>
+<ol>
 
  Which command(s) below would save the changes of `myfile.txt` to my local Git repository?
 
@@ -157,7 +164,7 @@ How can Dracula "undo" his last `git init`?
      ~~~
 
 </div>
-
+</ol>
 
 
 ## Tracking Changes to Files
@@ -895,7 +902,7 @@ nothing to commit, working directory clean
 
 <div class="keypoints" markdown="1">
 
-#### Key Points
+## Key Points
 *   Use `git config` to configure a user name, email address, editor, and other preferences once per machine.
 *   `git init` initializes a repository.
 *   `git status` shows the status of a repository.
