@@ -110,28 +110,27 @@ nothing to commit (create/copy files and use "git add" to track)
 {:class="out"}
 
 
-<h4 id="challenges">Challenges</h4>
+####Challenges
 
- Dracula starts a new project, `moons`, related to his `planets` project.
- Despite Wolfman's concerns, he enters the following sequence of commands to
- create one Git repository inside another:
-{:class="in"}
-~~~ 
- cd             # return to home directory
- mkdir planets  # make a new directory planets
- cd planets     # go into planets
- git init       # make the planets directory a Git repository
- mkdir moons    # make a sub-directory planets/moons
- cd moons       # go into planets/moons
- git init       # make the moons sub-directory a Git repository
-~~~
+> Dracula starts a new project, `moons`, related to his `planets` project.
+> Despite Wolfman's concerns, he enters the following sequence of commands to
+> create one Git repository inside another:
+> 
+> ~~~ 
+>  cd             # return to home directory
+>  mkdir planets  # make a new directory planets
+>  cd planets     # go into planets
+>  git init       # make the planets directory a Git repository
+>  mkdir moons    # make a sub-directory planets/moons
+>  cd moons       # go into planets/moons
+>  git init       # make the moons sub-directory a Git repository
+> ~~~
+> 
+> Why is it a bad idea to do this?
+> How can Dracula "undo" his last `git init`?
 
-Why is it a bad idea to do this?
-How can Dracula "undo" his last `git init`?
 
 
-
-<div class="challenges">
 <h4 id="challenges">Challenges</h4>
 
  Which command(s) below would save the changes of `myfile.txt` to my local Git repository?
@@ -161,8 +160,6 @@ $ git commit -m "my recent changes"
 ~~~
 $ git commit -m myfile.txt "my recent changes"
 ~~~
-
-</div>
 
 
 ## Tracking Changes to Files
