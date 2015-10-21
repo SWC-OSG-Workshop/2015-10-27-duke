@@ -109,8 +109,6 @@ nothing to commit (create/copy files and use "git add" to track)
 ~~~
 {:class="out"}
 
-<img src="img/filesystem-challenge.svg" alt="Filesystem for Challenge Questions" />
-
 <div class="challenge" markdown="1">
 
  Dracula starts a new project, `moons`, related to his `planets` project.
@@ -129,6 +127,35 @@ nothing to commit (create/copy files and use "git add" to track)
 
 Why is it a bad idea to do this?
 How can Dracula "undo" his last `git init`?
+</div>
+
+<div class="challenge" markdown="1">
+
+ Which command(s) below would save the changes of `myfile.txt` to my local Git repository?
+
+ 1.⋅
+
+     ~~~
+     $ git commit -m "my recent changes"
+     ~~~
+ 2.⋅
+
+     ~~~
+     $ git init myfile.txt
+     $ git commit -m "my recent changes"
+     ~~~
+ 3.⋅
+
+     ~~~
+     $ git add myfile.txt
+     $ git commit -m "my recent changes"
+     ~~~
+ 4.⋅
+
+     ~~~
+     $ git commit -m myfile.txt "my recent changes"
+     ~~~
+
 </div>
 
 
