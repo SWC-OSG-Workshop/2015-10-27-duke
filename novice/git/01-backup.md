@@ -797,21 +797,25 @@ moving backward and forward in time becomes much easier.
 >     ~~~
 >     $ git checkout HEAD
 >     ~~~
+>
 > 2.⋅
 >
 >     ~~~
 >     $ git checkout HEAD data_cruncher.py
 >     ~~~
+>
 > 3.⋅
 >
 >     ~~~
 >     $ git checkout HEAD~1 data_cruncher.py
 >     ~~~
+>
 > 4.⋅
 >
 >     ~~~
 >     $ git checkout <unique ID of last commit> data_cruncher.py
 >     ~~~
+>
 > 5. Both 2 & 4
 
 
