@@ -576,6 +576,13 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 ~~~
 {:class="out"}
 
+To recap, when we want to add changes to our repository,
+we first need to add the changed files to the staging area
+(`git add`) and then commit the staged changes to the
+repository (`git commit`):
+
+<img src="img2/git-committing.svg" alt="The Git Committing Workflow" />
+
 #### Challenge: Managing `bio` Repository
 
 > Create a new Git repository on your computer called `bio`.
