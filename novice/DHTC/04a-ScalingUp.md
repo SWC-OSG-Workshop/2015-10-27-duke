@@ -292,7 +292,7 @@ Each job produce rosen-sa-opt$(Process).dat file, where $(Process) is the proces
 After all jobs finished, we want to gather the output data. The script `post-script.bash` gathers the⋅
 output values and numerically sort them according to function values.⋅
 
-    $ post-script.bash⋅
+    $ post-script.bash 
 
 
 ## Getting Help
