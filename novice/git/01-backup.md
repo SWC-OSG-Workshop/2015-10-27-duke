@@ -110,9 +110,7 @@ nothing to commit (create/copy files and use "git add" to track)
 {:class="out"}
 
 
-<div class="challenges">
 <h4 id="challenges">Challenges</h4>
-<ol>
 
  Dracula starts a new project, `moons`, related to his `planets` project.
  Despite Wolfman's concerns, he enters the following sequence of commands to
@@ -127,18 +125,14 @@ nothing to commit (create/copy files and use "git add" to track)
  cd moons       # go into planets/moons
  git init       # make the moons sub-directory a Git repository
 ~~~
-{:class="in"}
 
 Why is it a bad idea to do this?
 How can Dracula "undo" his last `git init`?
 
-</ol>
-</div>
 
 
 <div class="challenges">
 <h4 id="challenges">Challenges</h4>
-<ol>
 
  Which command(s) below would save the changes of `myfile.txt` to my local Git repository?
 
@@ -168,7 +162,6 @@ $ git commit -m "my recent changes"
 $ git commit -m myfile.txt "my recent changes"
 ~~~
 
-</ol>
 </div>
 
 
