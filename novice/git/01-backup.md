@@ -141,28 +141,31 @@ How can Dracula "undo" his last `git init`?
 
  Which command(s) below would save the changes of `myfile.txt` to my local Git repository?
 
- 1.⋅
+1. 
 
-     ~~~
-     $ git commit -m "my recent changes"
-     ~~~
- 2.⋅
+~~~
+$ git commit -m "my recent changes"
+~~~
 
-     ~~~
-     $ git init myfile.txt
-     $ git commit -m "my recent changes"
-     ~~~
- 3.⋅
+2.
 
-     ~~~
-     $ git add myfile.txt
-     $ git commit -m "my recent changes"
-     ~~~
- 4.⋅
+~~~
+$ git init myfile.txt
+$ git commit -m "my recent changes"
+~~~
 
-     ~~~
-     $ git commit -m myfile.txt "my recent changes"
-     ~~~
+3.⋅
+
+~~~
+$ git add myfile.txt
+$ git commit -m "my recent changes"
+~~~
+
+4.⋅
+
+~~~
+$ git commit -m myfile.txt "my recent changes"
+~~~
 
 </ol>
 </div>
