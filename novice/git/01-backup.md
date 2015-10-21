@@ -21,11 +21,9 @@ title: A Better Kind of Backup
 We'll start by exploring how version control can be used
 to keep track of what one person did and when.
 
-
 ## Setting Up
 
-The first time we use Git on a new machine,
-we need to configure a few things.
+The first time we use Git on a new machine, we need to configure a few things.
 Here's how Dracula sets up his new laptop:
 
 ~~~
@@ -37,11 +35,9 @@ $ git config --global core.editor "nano"
 {:class="in"}
 
 (Please use your own name and email address instead of Dracula's,
-and please make sure you choose an editor that's actually on your system,
-such as `notepad` on Windows.)
+and please make sure you choose an editor that's actually on your system, such as `nano`, `vi` or `emacs`). 
 
-Git commands are written `git verb`,
-where `verb` is what we actually want it to do.
+Git commands are written `git verb`, where `verb` is what we actually want it to do.
 In this case,
 we're telling Git:
 
@@ -53,10 +49,10 @@ we're telling Git:
 The four commands above only need to be run once:
 the flag `--global` tells Git to use the settings for every project on this machine.
 
+
 ## Creating a Repository
 
-Once Git is configured,
-we can start using it.
+Once Git is configured, we can start using it.
 Let's create a directory for our work:
 
 ~~~
@@ -112,6 +108,30 @@ $ git status
 nothing to commit (create/copy files and use "git add" to track)
 ~~~
 {:class="out"}
+
+<img src="img/filesystem-challenge.svg" alt="Filesystem for Challenge Questions" />
+
+<div class="challenge" markdown="1">
+
+ Dracula starts a new project, `moons`, related to his `planets` project.
+ Despite Wolfman's concerns, he enters the following sequence of commands to
+ create one Git repository inside another:
+
+~~~ 
+ cd             # return to home directory
+ mkdir planets  # make a new directory planets
+ cd planets     # go into planets
+ git init       # make the planets directory a Git repository
+ mkdir moons    # make a sub-directory planets/moons
+ cd moons       # go into planets/moons
+ git init       # make the moons sub-directory a Git repository
+~~~
+
+Why is it a bad idea to do this?
+How can Dracula "undo" his last `git init`?
+</div>
+
+
 
 ## Tracking Changes to Files
 
@@ -621,7 +641,7 @@ index df0654a..b36abfd 100644
 ~~~
 {:class="out"}
 
-#### Recovering Old Versions
+## Recovering Old Versions
 
 All right:
 we can save changes to files and see what we've changed---how
