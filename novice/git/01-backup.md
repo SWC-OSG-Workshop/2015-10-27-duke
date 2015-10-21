@@ -110,8 +110,8 @@ nothing to commit (create/copy files and use "git add" to track)
 {:class="out"}
 
 
-####Challenges
-
+####Challenge: Places to Create Git Repositories
+>
 > Dracula starts a new project, `moons`, related to his `planets` project.
 > Despite Wolfman's concerns, he enters the following sequence of commands to
 > create one Git repository inside another:
@@ -127,10 +127,10 @@ nothing to commit (create/copy files and use "git add" to track)
 > ~~~
 > Why is it a bad idea to do this?
 > How can Dracula "undo" his last `git init`?
-</div>
 
 
-####Challenges
+####Challenge:  Committing Changes to Git
+
 > Which command(s) below would save the changes of `myfile.txt` to my local Git repository?
 >
 >1. 
@@ -575,15 +575,13 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 ~~~
 {:class="out"}
 
-#### Challanges
+#### Challenge: Managing `bio` Repository
 
 > Create a new Git repository on your computer called `bio`.
 > Write a three-line biography for yourself in a file called `me.txt`,
 > commit your changes,
 > then modify one line and add a fourth and display the differences
 > between its updated state and its original state.
-
-
 
 ## Exploring History
 
@@ -775,6 +773,39 @@ without also undoing changes made later to the conclusion.
 If the introduction and conclusion are stored in separate files,
 on the other hand,
 moving backward and forward in time becomes much easier.
+
+####  Challenge: Recovering Older Versions of a File
+>
+> Jennifer has made changes to the Python script that she has been working on for weeks, and the
+> modifications she made this morning "broke" the script and it no longer runs. She has spent
+> ~ 1hr trying to fix it, with no luck...
+>
+> Luckily, she has been keeping track of her project's versions using Git! Which commands below will
+> let her recover the last committed version of her Python script called
+> `data_cruncher.py`?
+>
+> 1.⋅
+>
+>     ~~~
+>     $ git checkout HEAD
+>     ~~~
+> 2.⋅
+>
+>     ~~~
+>     $ git checkout HEAD data_cruncher.py
+>     ~~~
+> 3.⋅
+>
+>     ~~~
+>     $ git checkout HEAD~1 data_cruncher.py
+>     ~~~
+> 4.⋅
+>
+>     ~~~
+>     $ git checkout <unique ID of last commit> data_cruncher.py
+>     ~~~
+> 5. Both 2 & 4
+
 
 ## Ignoring Things
 
