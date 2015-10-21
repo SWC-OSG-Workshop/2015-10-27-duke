@@ -576,15 +576,13 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 {:class="out"}
 
 #### Challanges
-<div class="challenge" markdown="1">
 
-Create a new Git repository on your computer called `bio`.
-Write a three-line biography for yourself in a file called `me.txt`,
-commit your changes,
-then modify one line and add a fourth and display the differences
-between its updated state and its original state.
+> Create a new Git repository on your computer called `bio`.
+> Write a three-line biography for yourself in a file called `me.txt`,
+> commit your changes,
+> then modify one line and add a fourth and display the differences
+> between its updated state and its original state.
 
-</div>
 
 
 ## Exploring History
