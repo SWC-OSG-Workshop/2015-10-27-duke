@@ -130,6 +130,7 @@ nothing to commit (create/copy files and use "git add" to track)
 
 Why is it a bad idea to do this?
 How can Dracula "undo" his last `git init`?
+
 </ol>
 </div>
 
@@ -163,8 +164,8 @@ How can Dracula "undo" his last `git init`?
      $ git commit -m myfile.txt "my recent changes"
      ~~~
 
-</div>
 </ol>
+</div>
 
 
 ## Tracking Changes to Files
