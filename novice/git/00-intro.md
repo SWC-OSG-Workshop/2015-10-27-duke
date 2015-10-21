@@ -38,3 +38,12 @@ and because of a hosting site called [GitHub](http://github.com).
 No matter which version control system you use,
 the most important thing to learn is not the details of their more obscure commands,
 but the workflow that they encourage.
+
+<div>
+  <a href="http://www.phdcomics.com"><img src="img/phd101212s.gif" alt="Piled Higher and Deeper by Jorge Cham, http:
+//www.phdcomics.com" /></a>
+  <p>"Piled Higher and Deeper" by Jorge Cham, http://www.phdcomics.com</p>
+</div>
+
+
+
