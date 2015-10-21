@@ -117,7 +117,7 @@ nothing to commit (create/copy files and use "git add" to track)
  Dracula starts a new project, `moons`, related to his `planets` project.
  Despite Wolfman's concerns, he enters the following sequence of commands to
  create one Git repository inside another:
-
+{:class="in"}
 ~~~ 
  cd             # return to home directory
  mkdir planets  # make a new directory planets
@@ -127,6 +127,7 @@ nothing to commit (create/copy files and use "git add" to track)
  cd moons       # go into planets/moons
  git init       # make the moons sub-directory a Git repository
 ~~~
+{:class="in"}
 
 Why is it a bad idea to do this?
 How can Dracula "undo" his last `git init`?
@@ -923,10 +924,12 @@ nothing to commit, working directory clean
 </div>
 
 <div class="challenge" markdown="1">
+
 Create a new Git repository on your computer called `bio`.
 Write a three-line biography for yourself in a file called `me.txt`,
 commit your changes,
 then modify one line and add a fourth and display the differences
 between its updated state and its original state.
+
 </div>
 
