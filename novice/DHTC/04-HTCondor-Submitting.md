@@ -22,12 +22,12 @@ describe how to execute the program and transfer the output data.
 First, we log in to OSG Connect:
 
 ~~~
-$ ssh username@login.osgconnect.net  # username is your username
-password:                            # enter your password
+$ ssh username@ login.duke.ci-connect.net  # username is your username
+password:                                  # enter your password
 ~~~
 
-Let's introduce two commands that will be useful throughout your OSG Connect
-usage: `connect` and `tutorial`.
+Let's introduce a command that will be useful throughout your OSG Connect
+usage: `connect`.
 
 `Connect` is a single interface to tools that enhance or simplify your use
 of the OSG Connect platform.  We occasionally add components to this command
@@ -94,50 +94,7 @@ workloads, until you change it again.
 > principal investigator.
 
 
-The second command to learn up front is `tutorial`.  We will get our
-example files for all today's lessons using `tutorial`.
-
-~~~
-$ tutorial
-usage: tutorial list                 - show available tutorials
-       tutorial info <tutorial-name> - show details of a tutorial
-       tutorial <tutorial-name>      - set up a tutorial
-
-Currently available tutorials:
-R ..................... Estimate Pi using the R programming language
-cp2k .................. How-to for the electronic structure package CP2K
-dagman-namd ........... Launch a series of NAMD simulations via Condor DAG
-error101 .............. Use condor_q -better-analyze to analyze stuck jobs
-exitcode .............. Use HTCondor's periodic_release to retry failed jobs
-htcondor-transfer ..... Transfer data via HTCondor's own mechanisms
-namd .................. Run a molecular dynamics simulation using NAMD
-oasis-parrot .......... Software access with OASIS and Parrot
-octave ................ Matrix manipulation via the Octave programming language
-pegasus ............... An introduction to the Pegasus job workflow manager
-photodemo ............. A complete analysis workflow using HTTP transfer
-quickstart ............ How to run your first OSG job
-root .................. Inspect ntuples using the ROOT analysis framework
-scaling ............... Learn to steer jobs to particular resources
-scaling-up-resources .. A simple multi-job demonstration
-software .............. Software access tutorial
-stash-chirp ........... Use the chirp I/O protocol for remote data access
-stash-http ............ Retrieve job input files from Stash via HTTP
-stash-namd ............ Provide input files for NAMD via Stash's HTTP interface
-swift ................. Introduction to the SWIFT parallel scripting language
-
-Enter "tutorial name-of-tutorial" to clone and try out a tutorial.
-~~~
-
-Each of these rows above is a tutorial that you can work through on your
-own, after the workshop.  We add new tutorials from time to time, as well.
-Each tutorial has a `README.md` file within that gives teaching material
-on what the tutorial is trying to illustrate, and you can read them online
-at the [OSG Connectbook](http://osgconnect.net/book).
-
-Note the word _clone_ in that last line of output.  There's no mistake
-that it's the same term as we used for copying a git repository.  Each
-tutorial is version-controlled, and actually resides on GitHub.  When
-you use the `tutorial` command you're getting content from there.
+We will get our example files for all today's lessons using `tutorial`.
 
 Let's get started with the *quickstart* tutorial:
 
@@ -194,7 +151,7 @@ $ ./short.sh
 ~~~
 Start time: Wed Aug 21 09:21:35 CDT 2013
 
-Job is running on node: login01.osgconnect.net
+Job is running on node: login.duke.ci-connect.net
 
 Job running as user: uid=54161(username) gid=1000(users) groups=1000(users),0(root),1001(osg-connect),1002(osg-staff),1003(osg-connect-test),9948(staff),19012(osgconnect)
 
@@ -256,7 +213,7 @@ jobs by adding your own username to the command.
 
 ~~~
 $ condor_q username
--- Submitter: login01.osgconnect.net : <128.135.158.173:43606> : login01.osgconnect.net
+-- Submitter: login.duke.ci-connect.net : <128.135.158.173:43606> : login.duke.ci-connect.net
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
  823.0   username           8/21 09:46   0+00:00:06 R  0   0.0  short.sh
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
@@ -268,7 +225,7 @@ cluster -- the number that `condor_submit` gave you.
 
 ~~~
 $ condor_q 823
--- Submitter: login01.osgconnect.net : <128.135.158.173:43606> : login01.osgconnect.net
+-- Submitter: login.duke.ci-connect.net : <128.135.158.173:43606> : login.duke.ci-connect.net
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
  823.0   username           8/21 09:46   0+00:00:10 R  0   0.0  short.sh
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
