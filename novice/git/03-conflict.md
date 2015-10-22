@@ -124,7 +124,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ~~~
 {:class="out"}
 
-<img src="img2/git-freshly-made-github-repo.svg" alt="The conflicting changes" />
+<img src="img2/conflict.svg" alt="The conflicting changes" />
 
 Git detects that the changes made in one copy overlap with those made in the other
 and stops us from trampling on our previous work.
