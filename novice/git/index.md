@@ -13,10 +13,14 @@ title: Version Control with Git
 >####Time: 1:30 PM - 4.30 PM, Oct 27th 2015
 >
 > This Duke-OSG event is being run by the [open science grid (OSG)](http://opensciencegrid.org/), in collaboration with⋅
-> [Software Carpentry](http://software-carpentry.org).  The Open Science Grid (OSG) is a national scale distributed⋅
->  infrastructure for scientific computing.  Software Carpentry's mission is to help scientists and engineers⋅
+> [Software Carpentry](http://software-carpentry.org) 
+> and <a href="https://rc.duke.edu/author/mdelongduke-edu/">Duke Research Computing</a>.  The 
+> Open Science Grid (OSG) is a national scale distributed infrastructure for 
+> scientific computing.  Software Carpentry's mission is to help scientists and engineers⋅
 >  become more productive by teaching them basic lab skills for computing
->  like program design, version control, data management, and task automation.
+>  like program design, version control, data management, and task automation. Duke Research Computing offers 
+> services that are useful to research computing “as it is practiced” across Duke and 
+> often in collaboration with researchers at other institutions.
 >
 
 
