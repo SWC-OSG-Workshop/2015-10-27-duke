@@ -53,11 +53,26 @@ SSH` installed on your laptop.  For details, follow [this link](http://swc-osg-w
  and scripts, you probably won't learn much from this lesson.
 
 ### Getting ready
- You need to download some files to follow this lesson:
 
- *    Download the zipped filesystem by clicking [this link](../../data/filesystem.zip). 
+ You need to download some files to follow this lesson. Log into your account 
+on <code>login.duke.ci-connect.net</code> and download the zipped filesystem using wget:
 
-     $ unzip filesystem.zip
+~~~
+$ wget http://swc-osg-workshop.github.io/2015-10-27-duke/data/filesystem.zip
+~~~
+{:class="in"}
+
+Alternatively, if you are doing these exercises on your local desktop or laptop, you can download 
+the filesystem by clicking [this link](../../data/filesystem.zip).⋅
+
+Unpack the zipped files - on Windows or a Mac, you can probably just double-click or click the downloaded
+file to unpack it. On linux you can type in a command like
+
+~~~
+$ unzip filesystem.zip
+~~~
+{:class="in"}
+
 
 ### Topics
 
