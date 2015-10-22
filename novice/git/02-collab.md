@@ -263,21 +263,21 @@ to share work between different people and machines.
 >For the next step, get into pairs.
 >One person will be the "Owner" (this is the person whose Github repository will be used to start the exercise) and the other person will be the "Collaborator" (this is the person who will be cloning the Owner's repository and making changes to it).
 
-The Owner needs to give the Collaborator access.  On GitHub, click the settings button on the right,
-then select Collaborators, and enter your partner's username.
-
-<img src="img2/github-add-collaborators.png" alt="Creating a Repository on GitHub (Step 1)" />
-
-
-The Collaborator needs to work on this project locally. He or she should make a copy of the Owner's repository:
-
-~~~ {.bash}
-$ git clone https://github.com/owners-username/owners-repo.git
-~~~
-
-
-`git clone` creates a fresh local copy of a remote repository.  The Collaborator can now make a change in his or her copy of the repository:
-
+>The Owner needs to give the Collaborator access.  On GitHub, click the settings button on the right,
+>then select Collaborators, and enter your partner's username.
+>
+><img src="img2/github-add-collaborators.png" alt="Creating a Repository on GitHub (Step 1)" />
+>
+>
+>The Collaborator needs to work on this project locally. He or she should make a copy of the Owner's repository:
+>
+>~~~
+>$ git clone https://github.com/owners-username/owners-repo.git
+>~~~
+>
+>
+>`git clone` creates a fresh local copy of a remote repository.  The Collaborator can now make a change in his or her copy of the repository:
+>
 >
 >For this challange, you will collaborate with the person next to you. 
 >
