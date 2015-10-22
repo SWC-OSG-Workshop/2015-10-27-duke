@@ -289,7 +289,7 @@ or find a way to divide the work up differently.
 
 > ## Challenge:  
 > This is an extention of the previous challenge on collaboration. Now `member A` and `member B`  create a conflict by 
-> editing the same file, add commit the file locally. After the local commit, push it.
+> editing the same file and then commit the file locally. After the local commit, push it.
 >One of you  should get a merge conflict.
 >Look the file in conflict, and resolve it.
 
