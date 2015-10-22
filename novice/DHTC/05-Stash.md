@@ -116,7 +116,7 @@ Now go to [http://duke.ci-connect.net](http://login.duke.ci-connect.net) and und
 Transfer menu, select Start Transfer.  For the first endpoint, enter username#name
 where name is the name you choose for the endpoint above. You should now see the
 files from your laptop displayed.  For the second endpoint, enter
-`osgconnect#stash` and hit enter.  You should now see the contents of your home
+`connect#stash` and hit enter.  You should now see the contents of your home
 directory on Duke Connect.  Now double click on the `data` directory.  Select a
 file on your laptop and click on the right arrow on the top of the screen to
 start a transfer to Stash. You can transfer files or directories to your
