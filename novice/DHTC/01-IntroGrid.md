@@ -98,7 +98,6 @@ Log in to Duke CI Connect
 $ ssh username@login.duke.ci-connect.net
 ~~~
 
-<!---
 The first step in using the `module` command is to initialize the module system.  This 
 step consists of sourcing a shell specific file that adds the module command 
 to your environment. For example, initializing module for bash is done as follows:
@@ -109,11 +108,10 @@ $ source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/5.6.2/init/bash
 
 For other shells such as `sh`, `zsh`, `tcsh`, `csh`, etc., you would replace bash with the shell name (e.g. `zsh`).
 
+Note that this step is not always necessary as there are many OSG sites where the module system is initialized automatically.  However, it is a good idea to always include this step in your job if it requires modules.
 
 Once the distributed environment modules system is initialized, you can check the 
 available modules: 
--->
-Once logged in, the fist `module` command you may want to issue is `module avail`, which checks the available modules:
 
 ~~~
 $ module avail
@@ -310,11 +308,12 @@ Running setup in ./tutorial-R...
 The `tutorial R` command creates a directory `tutorial-R` containing the neccessary script and input files. 
 
 ~~~
+$ cd tutorial-R
 $ ls 
 mciP.R       # The example R script file
 README.md    # The tutorial README file (with instructions and explanation of the material)
-R-wrapper.sh # The job execution file 
 R.submit     # The job submission file (will discuss later in the lesson HTCondor scripts)
+R-wrapper.sh # The job execution file 
 ~~~
 
 Let's focus on `mciP.R` and the `R-wrapper.sh` scripts. The details of `R.submit` script 
