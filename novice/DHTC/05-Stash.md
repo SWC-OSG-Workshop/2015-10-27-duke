@@ -49,6 +49,13 @@ $ cd ~/stash
 $ echo "Hello world" > my_hello_world
 ~~~
 
+In addition, let's create a directory as well for future use:
+
+~~~
+$ mkdir my_directory
+~~~
+
+
 
 <h2>Transferring files to and from Stash using SCP </h2> 
 
@@ -70,7 +77,7 @@ previously.  To copy directories using `scp`, you'll just pass the `-r` option t
 it.  E.g:
 
 ~~~
-$ scp -r username@login.duke.ci-connect.net:~/data/my-directory .
+$ scp -r username@login.duke.ci-connect.net:~/data/my_directory .
 ~~~
 
 > #### Challenges
