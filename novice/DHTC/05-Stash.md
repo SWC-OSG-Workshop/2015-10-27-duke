@@ -227,11 +227,11 @@ Now we submit the NAMD job.
 $ condor_submit namd_stash_run.submit 
 ~~~
 
-Once the job completes, you will see non-empty "job.out" file where 
+Once the job completes, you will see non-empty "namdoutput_using_stash.dat" file where 
 the standout output from the programs are written as default.   
 
 ~~~
-$ tail job.out
+$ tail  namdoutput_using_stash.dat
 
 WallClock: 6.084453  CPUTime: 6.084453  Memory: 53.500000 MB
 Program finished.
