@@ -30,7 +30,7 @@ the basic HTCondor script, it is easy to scale up.
 
 ~~~
 $ tutorial ScalingUp-R
-$ cd ScalingUp-R
+$ cd tutorial-ScalingUp-R
 ~~~
 
 As we discussed in the previous section on HTCondor scripts, we need to
@@ -64,9 +64,9 @@ Let us take a look at the execution script, R-wrapper.sh
 
 ~~~
 #!/bin/bash
-  source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/5.6.2/init/bash
-  module load R
-  Rscript $1 > mcpi.$2.out
+source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/current/init/bash
+module load R
+Rscript $1 > mcpi.$2.out
 ~~~
 
 The wrapper loads the R module and then executes the script with Rscript utility. From the submit 
@@ -88,7 +88,7 @@ progress. Execute the following bash script to compute the average from all the 
 Once the jobs are completed, you might want to invoke the script 
 
 ~~~
-$mcpi_ave.bash
+$ ./mcpi_ave.bash
 ~~~
 
 to compute the average value of pi from all the available outputs.  
@@ -279,7 +279,7 @@ argument is a numerical label that would be attached with the name of the output
 
 We submit the job using `condor_submit` command as follows
 
-    $ condor_submit SA_Opt.submit //Submit the condor job description file "SA_Opt.submit"
+    $ condor_submit SA_Opt.submit  # Submit the condor job description file "SA_Opt.submit"
 
 Now you have submitted the an ensemble of 10 jobs. The jobs should be finished quickly (less than an hour). You can check the status of the submitted job by using the `condor_q` command as follows
 
@@ -292,7 +292,7 @@ Each job produce rosen-sa-opt$(Process).dat file, where $(Process) is the proces
 After all jobs finished, we want to gather the output data. The script `post-script.bash` gathers the⋅
 output values and numerically sort them according to function values.⋅
 
-    $ post-script.bash 
+    $ ./post-script.bash 
 
 
 ## Getting Help
