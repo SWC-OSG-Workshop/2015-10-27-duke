@@ -143,6 +143,13 @@ If someone else had pushed some changes to the repository on GitHub,
 though,
 this command would download them to our local repository.
 
+####Challenge
+> Create a repository on GitHub,
+> clone it,
+> add a file,
+> push those changes to GitHub. 
+
+
 ## Collaborating
 
 We can simulate working with a collaborator using another copy of the repository on our local machine.
@@ -252,6 +259,20 @@ or on someone else's computer.
 Pushing and pulling changes gives us a reliable way
 to share work between different people and machines.
 
+####Challange
+>
+>For this challange, you will collaborate with the person next to you. 
+>
+>Step.1 One of you (say `member A`) should create a repository on the Github and add some content. Then 
+>add `member B` as collaborator.
+>
+>Step. 2 `member B` should clone the repository from GitHub, modify the content and then push it. 
+>
+>Step. 3 `member A` should pull the repo. Now both of you should have the identical copy. 
+>
+>Step. 4  Repeat the steps 2 and 3 couple of times. Observe git log, diff, and status. 
+>
+
 <div class="keypoints" markdown="1">
 
 #### Key Points
@@ -263,9 +284,3 @@ to share work between different people and machines.
 
 </div>
 
-<div class="challenge" markdown="1">
-Create a repository on GitHub,
-clone it,
-add a file,
-push those changes to GitHub. 
-</div>
