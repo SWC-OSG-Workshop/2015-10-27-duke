@@ -49,6 +49,13 @@ $ cd ~/stash
 $ echo "Hello world" > my_hello_world
 ~~~
 
+In addition, let's create a directory as well for future use:
+
+~~~
+$ mkdir my_directory
+~~~
+
+
 
 <h2>Transferring files to and from Stash using SCP </h2> 
 
@@ -70,7 +77,7 @@ previously.  To copy directories using `scp`, you'll just pass the `-r` option t
 it.  E.g:
 
 ~~~
-$ scp -r username@login.duke.ci-connect.net:~/data/my-directory .
+$ scp -r username@login.duke.ci-connect.net:~/data/my_directory .
 ~~~
 
 > #### Challenges
@@ -109,7 +116,7 @@ Now go to [http://duke.ci-connect.net](http://login.duke.ci-connect.net) and und
 Transfer menu, select Start Transfer.  For the first endpoint, enter username#name
 where name is the name you choose for the endpoint above. You should now see the
 files from your laptop displayed.  For the second endpoint, enter
-`osgconnect#stash` and hit enter.  You should now see the contents of your home
+`connect#stash` and hit enter.  You should now see the contents of your home
 directory on Duke Connect.  Now double click on the `data` directory.  Select a
 file on your laptop and click on the right arrow on the top of the screen to
 start a transfer to Stash. You can transfer files or directories to your
@@ -167,6 +174,12 @@ You should see the following files in the directory:
 
 ~~~
 $ ls
+namd_stash_run.sh      par_all27_prot_lipid.inp  ubq_gbis_eq.conf  ubq.psf
+namd_stash_run.submit  README.md         ubq.pdb
+~~~
+
+The files 
+~~~
 namd_stash_run.submit #HTCondor job submission script file.
 namd_stash_run.sh #Job execution script file.
 ubq_gbis_eq.conf #Input configuration for NAMD.
@@ -205,7 +218,7 @@ namd2 ubq_gbis_eq.conf
 ~~~
 
 In the above script, you will have to insert your "username" in URL address. The
-parameter file located on Stash is downloaded using the #wget# utility.  
+parameter file located on Stash is downloaded using the `wget` utility.  
  
 
 Now we submit the NAMD job. 
@@ -214,11 +227,11 @@ Now we submit the NAMD job.
 $ condor_submit namd_stash_run.submit 
 ~~~
 
-Once the job completes, you will see non-empty "job.out.0" file where 
-the standout output from the programs are written as default.   
+Once the job completes, you will see non-empty `namdoutput_using_stash.dat` file where 
+the standout output from the programs is written.
 
 ~~~
-$ tail job.out.0
+$ tail  namdoutput_using_stash.dat
 
 WallClock: 6.084453  CPUTime: 6.084453  Memory: 53.500000 MB
 Program finished.
