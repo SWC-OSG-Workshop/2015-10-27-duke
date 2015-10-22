@@ -12,23 +12,23 @@ title: Data storage and transfer
 
 
 <h2> Overview </h2>
-In this lesson, we will learn the basics of data storage and transfer on OSG Connect. 
+In this lesson, we will learn the basics of data storage and transfer on Duke Connect. 
 
 <h2> Stash </h2>
-OSG Connect provides a storage system called Stash.  Stash provides a place to
+Duke Connect provides a storage system called Stash.  Stash provides a place to
 store data needed for jobs or output from jobs in the medium term.  Since
 Stash is not backed up, you should transfer job outputs from Stash to your
 local system as soon as practical.
 
-This lesson will go over accessing Stash using the OSG Connect login node as
+This lesson will go over accessing Stash using the Duke Connect login node as
 well as other methods such as Globus, and HTTP.
 <h2>Exploring the Stash system</h2>
 
 First, we'll look at accessing Stash from the login node. You'll need to log
-in to OSG Connect:
+in to Duke Connect:
 
 ~~~
-ssh username@login.osgconnect.net #Connect to the login node with your username
+ssh username@login.duke.ci-connect.net #Connect to the login node with your username
 passwd:       # your password
 ~~~
 
@@ -62,7 +62,7 @@ user@machine:/path/to/file .  Let's copy the file we just created from Stash to
 our local system:
 
 ~~~
-$ scp username@login.osgconnect.net:~/data/my_hello_world .
+$ scp username@login.duke.ci-connect.net:~/data/my_hello_world .
 ~~~
 
 As you can see, `scp` uses similar syntax to the `cp` command that you were shown
@@ -70,7 +70,7 @@ previously.  To copy directories using `scp`, you'll just pass the `-r` option t
 it.  E.g:
 
 ~~~
-$ scp -r username@login.osgconnect.net:~/data/my-directory .
+$ scp -r username@login.duke.ci-connect.net:~/data/my-directory .
 ~~~
 
 > #### Challenges
@@ -94,8 +94,8 @@ the globus connect personal installer specific to your system.
 While that's running, you'll need to get a setup key from Globus in order to
 setup the Globus Connect Personal software.  
 
-*   First login to [OSG Connect](http://www.osgconnect.net) using your OSG Connect username and password
-*   Next go to this [page](https://portal.osgconnect.net/xfer/ManageEndpoints#)
+*   First login to [Duke Connect](http://duke.ci-connect.net) using your Duke Connect username and password
+*   Next go to this [page](https://portal.duke.ci-connect.net/xfer/ManageEndpoints#)
 *   Click on the add Globus Connect Personal link
 *   Enter a name for your endpoint on the page (remember this!)
 *   Click on "Generate setup Key"
@@ -105,12 +105,12 @@ Finally, start the Globus online personal software that you just installed.  The
 installer will ask for the setup key that you obtained from the Globus website.
 At this point, the install and setup of Globus Connect Personal is complete.
 
-Now go to [http://www.osgconnect.net](http://www.osgconnect.net) and under the
+Now go to [http://duke.ci-connect.net](http://login.duke.ci-connect.net) and under the
 Transfer menu, select Start Transfer.  For the first endpoint, enter username#name
 where name is the name you choose for the endpoint above. You should now see the
 files from your laptop displayed.  For the second endpoint, enter
 `osgconnect#stash` and hit enter.  You should now see the contents of your home
-directory on OSG Connect.  Now double click on the `data` directory.  Select a
+directory on Duke Connect.  Now double click on the `data` directory.  Select a
 file on your laptop and click on the right arrow on the top of the screen to
 start a transfer to Stash. You can transfer files or directories to your
 laptop by selecting it in the Stash window and selecting the left arrow.
@@ -148,10 +148,10 @@ the data from the web. We will peform a  molecular dynamics simulation of a smal
 protein in implicit water. To get the necessary files, we use the *tutorial* command on 
 OSG. 
 
-Log in to OSG Connect:
+Log in to Duke Connect:
 
 ~~~
-$ ssh username@login.osgconnect.net
+$ ssh username@login.duke.ci-connect.net
 ~~~
 
 Type:
@@ -230,7 +230,7 @@ The above lines indicate the NAMD simulation was successful.
 <div class="keypoints" markdown="1">
 
 #### Key Points
-* Stash is located at ~/stash and ~/public on login.osgconnect.net. 
+* Stash is located at ~/stash and ~/public on login.duke.ci-connect.net.
 * Data can be transferred in and out of Stash using scp, Globus, and HTTP 
 * Data on Stash can be accessed by jobs running on compute nodes. 
 </div>
