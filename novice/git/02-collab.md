@@ -26,6 +26,8 @@ Most programmers use hosting services like [GitHub](http://github.com) or [BitBu
 to hold those master copies;
 we'll explore the pros and cons of this in the final section of this lesson.
 
+##  Copy of your repo on a central hub - Github
+
 Let's start by sharing the changes we've made to our current project with the world.
 Log in to GitHub,
 then click on the icon in the top right corner to create a new repository called `planets`:
@@ -53,7 +55,7 @@ $ git init
 Our local repository still contains our earlier work on `mars.txt`,
 but the remote repository on GitHub doesn't contain any files yet:
 
-<img src="img/git-freshly-made-github-repo.svg" alt="Freshly-Made GitHub Repository" />
+<img src="img2/git-freshly-made-github-repo.svg" alt="Freshly-Made GitHub Repository" />
 
 The next step is to connect the two repositories.
 We do this by making the GitHub repository a [remote](../../gloss.html#repository-remote)
@@ -119,7 +121,7 @@ Branch master set up to track remote branch master from origin.
 
 Our local and remote repositories are now in this state:
 
-<img src="img/github-repo-after-first-push.svg" alt="GitHub Repository After First Push" />
+<img src="img2/github-repo-after-first-push.svg" alt="GitHub Repository After First Push" />
 
 
 We can pull changes from the remote repository to the local one as well:
@@ -140,6 +142,8 @@ because the two repositories are already synchronized.
 If someone else had pushed some changes to the repository on GitHub,
 though,
 this command would download them to our local repository.
+
+## Collaborating
 
 We can simulate working with a collaborator using another copy of the repository on our local machine.
 To do this,
