@@ -174,6 +174,12 @@ You should see the following files in the directory:
 
 ~~~
 $ ls
+namd_stash_run.sh      par_all27_prot_lipid.inp  ubq_gbis_eq.conf  ubq.psf
+namd_stash_run.submit  README.md         ubq.pdb
+~~~
+
+The files 
+~~~
 namd_stash_run.submit #HTCondor job submission script file.
 namd_stash_run.sh #Job execution script file.
 ubq_gbis_eq.conf #Input configuration for NAMD.
@@ -212,7 +218,7 @@ namd2 ubq_gbis_eq.conf
 ~~~
 
 In the above script, you will have to insert your "username" in URL address. The
-parameter file located on Stash is downloaded using the #wget# utility.  
+parameter file located on Stash is downloaded using the `wget` utility.  
  
 
 Now we submit the NAMD job. 
