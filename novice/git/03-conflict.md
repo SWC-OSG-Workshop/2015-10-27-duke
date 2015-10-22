@@ -288,10 +288,8 @@ that they ought to clarify who's responsible for what,
 or find a way to divide the work up differently.
 
 > ## Challenge:  
-> This is an extention of the previous challenge on collaboration. Now `member A` and `member B`  edit 
->the same line (each of you would have different content) in the same file, add the file to stage-in and commit 
->it locally. After the local commit, push it.
->
+> This is an extention of the previous challenge on collaboration. Now `member A` and `member B`  create a conflict by 
+> editing the same file, add commit the file locally. After the local commit, push it.
 >One of you  should get a merge conflict.
 >Look the file in conflict, and resolve it.
 
