@@ -227,8 +227,8 @@ Now we submit the NAMD job.
 $ condor_submit namd_stash_run.submit 
 ~~~
 
-Once the job completes, you will see non-empty "namdoutput_using_stash.dat" file where 
-the standout output from the programs are written as default.   
+Once the job completes, you will see non-empty `namdoutput_using_stash.dat` file where 
+the standout output from the programs is written.
 
 ~~~
 $ tail  namdoutput_using_stash.dat
