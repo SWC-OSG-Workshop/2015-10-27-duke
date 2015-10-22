@@ -56,11 +56,12 @@ and to use that language *well*.
 
 ### Getting ready
  You need to download some files to follow this lesson:
- *     Download 
- *     $ git clone https://github.com/SWC-OSG-Workshop/ExampleData.git
- *     $ cd Python
 
- We host the IPython server for training here: https://ipython.osgconnect.net
+~~~
+$ git clone https://github.com/SWC-OSG-Workshop/ExampleData.git
+~~~
+
+ We host the IPython server for training here: https://ipython.osgconnect.net/swc-duke
  (You will need to log in with account and password on login.duke.ci-connect.net)
 
 <div class="toc" markdown="1">

@@ -21,7 +21,8 @@ We are studying inflammation in patients who have been given a new treatment for
 </div>
 
 <p>
-The master copy of the data for this study is in a git repository. You can browse that repository here: <a href="https://github.com/SWC-OSG-Workshop/ExampleData">https://github.com/SWC-OSG-Workshop/ExampleData</a>.  Let's take a look.  Inside the <code>Python</code> folder are several CSV files.  We'll use them in the upcoming examples.
+The master copy of the data for this study is in a git repository. You can browse that repository 
+here: <a href="https://github.com/SWC-OSG-Workshop/ExampleData">https://github.com/SWC-OSG-Workshop/ExampleData</a>.  Let's take a look.  Inside the <code>Python</code> folder are several CSV files.  We'll use them in the upcoming examples.
 </p>
 
 <p>
@@ -45,7 +46,7 @@ $ git clone https://github.com/SWC-OSG-Workshop/ExampleData.git
 </div>
 
 <p>
-IPython Notebook is a useful tool for interactive data exploration and visualization.  An IPython server runs the code, and you interact with it through a web browser.  OSG Connect hosts an IPython server for training here: <a href="https://ipython.osgconnect.net/">https://ipython.osgconnect.net</a>.  Let's go there now.  (You will need to log in.)
+IPython Notebook is a useful tool for interactive data exploration and visualization.  An IPython server runs the code, and you interact with it through a web browser.  OSG Connect hosts an IPython server for training here: <a href="https://ipython.osgconnect.net/swc-duke">https://ipython.osgconnect.net/swc-duke</a>.  Let's go there now.  (You will need to log in.)
 </p>
 
 <p>
