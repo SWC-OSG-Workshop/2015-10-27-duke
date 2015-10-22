@@ -49,9 +49,9 @@ Executable = R-wrapper.sh
 arguments = mcpi.R $(Process)
 transfer_input_files = mcpi.R     # mcpi.R is the R program we want to run
 
-output = job.out.$(Cluster).$(Process)  
-error = job.error.$(Cluster).$(Process)
-log = job.log.$(Cluster).$(Process)
+output = Log/job.out.$(Cluster).$(Process)  
+error = Log/job.error.$(Cluster).$(Process)
+log = Log/job.log.$(Cluster).$(Process)
 
 requirements = (HAS_CVMFS_oasis_opensciencegrid_org =?= TRUE)   # Checks if OASIS available
 queue 100
@@ -155,7 +155,7 @@ cinvestav.mx                      |1 (1.00%)   ▊
 Once the jobs are completed, you might want to invoke the script 
 
 ~~~
-$mcpi_ave.bash
+$./mcpi_ave.bash
 ~~~
 
 to compute the average value of pi from all the available outputs.  
@@ -256,7 +256,7 @@ Let us take a look at `SA_Opt.submit` file:⋅
     Error =  Log/job.$(Process).err             # standard error
     Log =    Log/job.$(Process).log             # log information about job execution
 
-    requirements = HAS_CVMFS_oasis_opensciencegrid_org =?= True   # Check if the worker machine has CVMFS⋅
+    requirements = HAS_CVMFS_oasis_opensciencegrid_org =?= True   && OpSysMajorVer > 5 # Check if the worker machine has CVMFS⋅
 
     queue 10                                   # Submit 10  jobs
 
@@ -281,7 +281,7 @@ We submit the job using `condor_submit` command as follows
 
     $ condor_submit SA_Opt.submit  # Submit the condor job description file "SA_Opt.submit"
 
-Now you have submitted the an ensemble of 10 jobs. The jobs should be finished quickly (less than an hour). You can check the status of the submitted job by using the `condor_q` command as follows
+Now you have submitted the an ensemble of 10 jobs. The jobs should be finished quickly (less than few minutes). You can check the status of the submitted job by using the `condor_q` command as follows
 
     $ condor_q username  # The status of the job is printed on the screen. Here, username is your login name.
 
