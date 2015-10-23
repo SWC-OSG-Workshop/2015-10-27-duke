@@ -49,21 +49,22 @@ $ condor_q -better-analyze JOB-ID -pool osg-flock.grid.iu.edu
 
 The Requirements expression for your job reduces to these conditions:
 
-         Slots
-Step    Matched  Condition
------  --------  ---------
-[0]           0  Memory >= 51200                 ######## BIG MEMORY, NOT AVAILABLE ###### 
-[1]       14727  TARGET.Arch == "X86_64"
-[2]       14727  TARGET.OpSys == "LINUX"
-[3]       14727  TARGET.Disk >= RequestDisk
-[4]       14727  TARGET.HasFileTransfer
+Suggestions:
+
+    Condition                         Machines Matched    Suggestion
+    ---------                         ----------------    ----------
+1   ( TARGET.Memory >= 2097152 )      0                   MODIFY TO 225687
+2   ( TARGET.Arch == "X86_64" )       12529                
+3   ( TARGET.OpSys == "LINUX" )       12529                
+4   ( TARGET.Disk >= 1 )              12529                
+5   ( ( TARGET.HasFileTransfer ) || ( TARGET.FileSystemDomain == "duke-login.osgconnect.net" ) )
+                                      12529    
 ~~~
 
-By looking through the match conditions, we see that many nodes match our requests for the Linux operating system and the x86_64 architecture, but none of them match our requirement for 51200 MB of memory. This is an error we introduced 
-puposefully in the script by including a line *Requirements = (Memory >= 51200)* in the file 
-"error101_job.submit". 
+By looking through the match conditions, we see that many nodes match our requests for the Linux operating system and the x86_64 architecture, but none of them match our requirement for 2097152 MB of memory. This is an error we introduced 
+puposefully in the script by including a line *request_memory = 2 TB* in the file "error101_job.submit". 
 
-We want to edit the job submit file and change the requirements such that we only request 512 MB of memory. The requirements line should look like this: *Requirements = (Memory >= 512)*
+We want to edit the job submit file and change the requirements such that we only request 512 MB of memory. The request_memory line should look like this: *request_memory = 2 GB*
 
 ~~~
 $ nano error101_job.submit
@@ -75,19 +76,14 @@ Finally, resubmit the job:
 $ condor_submit error101_job.submit
 ~~~
 
-Alternatively, you can edit the resource requirements of the idle job in queue:
-
-~~~
-condor_qedit JOB-ID Requirements 'Requirements = (Memory >= 512)' 
-~~~
-
 <br/>
 <br/>
 
 > ### On your own
-> * Use the `connect status` command to get a list of pools (e.g., `uc3-mgt.mwt2.org`) <br/>
-> * Edit `error101_job.submit`, replacing the `Requirements` line with `Requirements = (regexp("^uc**", TARGET.Machine, "IM") == True)` before the `queue` statement. <br/>
-> *  Use `condor_q -better-analyze` against each pool. Does it match any slots? If so, where?
+> * Use the `connect status` command to get a list of pools (e.g., `osg-flock.grid.iu.edu`) <br/>
+> * Edit `error101_job.submit`, add a `Requirements` line with `Requirements = OSGVO_OS_STRING == "RHEL 8"` before the `queue` statement. <br/>
+> *  Use `condor_q -better-analyze` against the pool. Does it match any slots? If so, where?
+> *  How about RHEL 6? Hint: you can explora a pool with condor_status' -constraint flag. For example: `condor_status -pool osg-flock.grid.iu.edu -constraint 'OSGVO_OS_STRING == "RHEL 6"'`
 
 <br/>
 <br/>
@@ -98,6 +94,9 @@ This command allows you to `ssh` to the compute node where the job is running. A
 ~~~
 condor_ssh_to_job JOB-ID  
 ~~~
+
+<br/>
+<br/>
 
 <h3> Held jobs and condor_release </h3>
 
