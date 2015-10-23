@@ -37,9 +37,11 @@ and computing resources (including "high-performance computing" supercomputers).
 These lessons will start you on a path towards using these resources effectively.
 
 ### Setup Instructions
- We will do all the exercises on `login.duke.ci-connect.net`.  If you do not have an account on
- `duke.ci-connect`, [please sign up](https://duke.ci-connect.net/signup). You also need 
-SSH` installed on your laptop.  For details, follow [this link](http://swc-osg-workshop.github.io/2015-10-27-duke/setup.html)
+
+*    We will do all the exercises on `login.duke.ci-connect.net`.⋅⋅
+*    If you do not have an account on `duke.ci-connect`, [please sign up](https://duke.ci-connect.net/signup).⋅
+*    You have an account on `duke.ci-connect but forgot the password, [click here](http://duke.ci-connect.net/password).⋅⋅
+*    You also need `SSH` installed on your laptop.  For details, follow [this link](http://swc-osg-workshop.github.io/2015-10-27-duke/setup.html)
 
 ### Prerequisites
  This lesson guides you through the basics of file systems and the
