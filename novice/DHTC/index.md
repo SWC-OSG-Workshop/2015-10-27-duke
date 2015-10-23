@@ -35,7 +35,7 @@ Come to this session to learn all about DHTC and the basics of grid computing. F
 ### Setup Instructions
  We will do all the exercises on `login.duke.ci-connect.net`.  If you do not have an account on
  `duke.ci-connect`, [please sign up](https://duke.ci-connect.net/signup). You have an account but forgot the 
-password, visit http://duke.ci-connect.net/password.  You also need⋅
+password, [click here](http://duke.ci-connect.net/password).  You also need 
 `SSH` installed on your laptop.  For details, follow [this link](http://swc-osg-workshop.github.io/2015-10-27-duke/setup.html)
 
 
