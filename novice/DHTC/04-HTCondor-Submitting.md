@@ -57,12 +57,12 @@ during this workshop.  Fow now, just take a look at two:
 $ connect show-projects
 Based on your username (username), here is a list of projects you have
 access to:
-  * SWC-OSG-IU15
+  * duke-SWC-Duke15
 ~~~
 
 Each time you run a workload on OSG Connect, you need a project name to
 associate it.  For your research work later on, we can get you started
-with a permanent project, but for now you should find the SWC-OSG-IU15
+with a permanent project, but for now you should find the duke-SWC-Duke15
 project available.  Some of you might also find the ConnectTrain project
 listed -- that is OK but not necessary.
 
