@@ -69,7 +69,7 @@ user@machine:/path/to/file .  Let's copy the file we just created from Stash to
 our local system:
 
 ~~~
-$ scp username@login.duke.ci-connect.net:~/data/my_hello_world .
+$ scp username@login.duke.ci-connect.net:~/stash/my_hello_world .
 ~~~
 
 As you can see, `scp` uses similar syntax to the `cp` command that you were shown
@@ -77,12 +77,12 @@ previously.  To copy directories using `scp`, you'll just pass the `-r` option t
 it.  E.g:
 
 ~~~
-$ scp -r username@login.duke.ci-connect.net:~/data/my_directory .
+$ scp -r username@login.duke.ci-connect.net:~/stash/my_directory .
 ~~~
 
 > #### Challenges
 >
-> * Create a directory with a file called `hello_world_2` in the `~/data` directory and copy it from Stash to your local system.
+> * Create a directory with a file called `hello_world_2` in the `~/stash` directory and copy it from Stash to your local system.
 > * Create a directory called `hello_world_3` on your local system and copy it to the `data` directory.
 
 <h2>Transferring files to and from Stash using Globus</h2>
@@ -130,7 +130,7 @@ laptop by selecting it in the Stash window and selecting the left arrow.
 
 <h2>Transferring files from Stash using HTTP</h2>
 Stash also allows you to access files using your web browser.  In order to do
-this, you'll need to put your file in `~/public`or `~/data/public` (the two locations 
+this, you'll need to put your file in `~/public`or `~/stash/public` (the two locations 
 point to the same directory). Any file or directory that is placed 
 here  will be made available in the Stash webserver.  Let's make a file
 available using the Stash webserver
