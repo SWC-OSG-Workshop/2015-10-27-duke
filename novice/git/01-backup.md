@@ -129,37 +129,6 @@ nothing to commit (create/copy files and use "git add" to track)
 > How can Dracula "undo" his last `git init`?
 
 
-####Challenge:  Committing Changes to Git
-
-> Which command(s) below would save the changes of `myfile.txt` to my local Git repository?
->
->1. 
->
->~~~
->$ git commit -m "my recent changes"
->~~~
->
->2.
->
->~~~
->$ git init myfile.txt
->$ git commit -m "my recent changes"
->~~~
->
->3.⋅
->
->~~~
->$ git add myfile.txt
->$ git commit -m "my recent changes"
->~~~
->
->4.⋅
->
->~~~
->$ git commit -m myfile.txt "my recent changes"
->~~~
->
-
 ## Tracking Changes to Files
 
 Let's create a file called `mars.txt` that contains some notes
@@ -583,13 +552,36 @@ repository (`git commit`):
 
 <img src="img2/git-committing.svg" alt="The Git Committing Workflow" />
 
-#### Challenge: Managing `bio` Repository
+####Challenge:  Committing Changes to Git
 
-> Create a new Git repository on your computer called `bio`.
-> Write a three-line biography for yourself in a file called `me.txt`,
-> commit your changes,
-> then modify one line and add a fourth and display the differences
-> between its updated state and its original state.
+> Which command(s) below would save the changes of `myfile.txt` to my local Git repository?
+>
+>1. 
+>
+>~~~
+>$ git commit -m "my recent changes"
+>~~~
+>
+>2.
+>
+>~~~
+>$ git init myfile.txt
+>$ git commit -m "my recent changes"
+>~~~
+>
+>3.⋅
+>
+>~~~
+>$ git add myfile.txt
+>$ git commit -m "my recent changes"
+>~~~
+>
+>4.⋅
+>
+>~~~
+>$ git commit -m myfile.txt "my recent changes"
+>~~~
+>
 
 ## Exploring History
 
@@ -683,6 +675,15 @@ index df0654a..b36abfd 100644
 +But the Mummy will appreciate the lack of humidity
 ~~~
 {:class="out"}
+
+#### Challenge: Managing `bio` Repository
+
+> Create a new Git repository on your computer called `bio`.
+> Write a three-line biography for yourself in a file called `me.txt`,
+> commit your changes,
+> then modify one line and add a fourth and display the differences
+> between its updated state and its original state.
+
 
 ## Recovering Old Versions
 
