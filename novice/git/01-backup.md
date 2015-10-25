@@ -291,6 +291,39 @@ and the log message Git was given when the revision was created.
 > so that our filesystem doesn't become cluttered
 > (and so that we can't accidentally edit or delete an old version).
 
+
+####Challenge:  Committing Changes to Git
+
+> Which command(s) below would save the changes of `myfile.txt` to my local Git repository?
+>
+>1.
+>
+>~~~
+>$ git commit -m "my recent changes"
+>~~~
+>
+>2.
+>
+>~~~
+>$ git init myfile.txt
+>$ git commit -m "my recent changes"
+>~~~
+>
+>3.
+>
+>~~~
+>$ git add myfile.txt
+>$ git commit -m "my recent changes"
+>~~~
+>
+>4.
+>
+>~~~
+>$ git commit -m myfile.txt "my recent changes"
+>~~~
+>
+
+
 ## Changing a File
 
 Now suppose Dracula adds more information to the file.
@@ -321,7 +354,7 @@ $ git status
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
-#	modified:   mars.txt
+#   modified:   mars.txt
 #
 no changes added to commit (use "git add" and/or "git commit -a")
 ~~~
@@ -552,36 +585,15 @@ repository (`git commit`):
 
 <img src="img2/git-committing.svg" alt="The Git Committing Workflow" />
 
-####Challenge:  Committing Changes to Git
+#### Challenge: Managing `bio` Repository
 
-> Which command(s) below would save the changes of `myfile.txt` to my local Git repository?
->
->1. 
->
->~~~
->$ git commit -m "my recent changes"
->~~~
->
->2.
->
->~~~
->$ git init myfile.txt
->$ git commit -m "my recent changes"
->~~~
->
->3.⋅
->
->~~~
->$ git add myfile.txt
->$ git commit -m "my recent changes"
->~~~
->
->4.⋅
->
->~~~
->$ git commit -m myfile.txt "my recent changes"
->~~~
->
+> Create a new Git repository on your computer called `bio`.
+> Write a three-line biography for yourself in a file called `me.txt`,
+> commit your changes,
+> then modify one line and add a fourth and display the differences
+> between its updated state and its original state.
+
+
 
 ## Exploring History
 
@@ -675,15 +687,6 @@ index df0654a..b36abfd 100644
 +But the Mummy will appreciate the lack of humidity
 ~~~
 {:class="out"}
-
-#### Challenge: Managing `bio` Repository
-
-> Create a new Git repository on your computer called `bio`.
-> Write a three-line biography for yourself in a file called `me.txt`,
-> commit your changes,
-> then modify one line and add a fourth and display the differences
-> between its updated state and its original state.
-
 
 ## Recovering Old Versions
 
@@ -793,33 +796,33 @@ moving backward and forward in time becomes much easier.
 > let her recover the last committed version of her Python script called
 > `data_cruncher.py`?
 >
-> 1.⋅
+> 1.
 >
 >     ~~~
 >     $ git checkout HEAD
 >     ~~~
 >
-> 2.⋅
+> 2.
 >
 >     ~~~
 >     $ git checkout HEAD data_cruncher.py
 >     ~~~
 >
-> 3.⋅
+> 3.
 >
 >     ~~~
 >     $ git checkout HEAD~1 data_cruncher.py
 >     ~~~
 >
-> 4.⋅
+> 4.
 >
 >     ~~~
 >     $ git checkout <unique ID of last commit> data_cruncher.py
 >     ~~~
 >
-> 5. 
+> 5.
 >
-> Both 2 & 4
+> Both 2 and 4
 >
 
 
