@@ -443,7 +443,7 @@ about them."
 *   `man command` displays the manual page for a given command.
 
 </div>
-
+<!--
 <div class="challenge" markdown="1">
 Write a short explanatory comment for the following shell script:
 
@@ -453,6 +453,7 @@ find . -name '*.dat' -print | wc -l | sort -n
 ~~~
 </div>
 </div>
+-->
 
 <div class="challenge" markdown="1">
 The `-v` flag to `grep` inverts pattern matching, so that only lines
@@ -468,4 +469,16 @@ end in `ose.dat` (e.g., `sucrose.dat` or `maltose.dat`), but do
 3. `grep -v temp $(find /data -name '*ose.dat' -print)`
 
 4. None of the above.
+</div>
+
+<div class="challenge" markdown="1">
+You and your friend, having just finished reading *Little Women* by 
+Louisa May Alcott, are in an argument.  Of the four sisters in the 
+book, Jo, Meg, Beth, and Amy, your friend thinks that Jo was the 
+most mentioned.  You, however, are certain it was Amy.  Luckily, you 
+have a file `LittleWomen.txt` containing the full text of the novel. 
+Using a`for` loop, how would you tabulate the number of times each 
+of the four sisters is mentioned?  Hint: one solution might employ 
+the commands `grep` and `wc` and a `|`, while another might utilize 
+`grep` options.
 </div>
