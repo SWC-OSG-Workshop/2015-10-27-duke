@@ -434,14 +434,16 @@ Explain why `-n` has this effect.
 What is the difference between:
 
 ~~~
-wc -l < mydata.dat
+echo hello > testfile01.txt
 ~~~
 
 and:
 
 ~~~
-wc -l mydata.dat
+echo hello >> testfile02.txt
 ~~~
+
+Hint: Try executing each command twice in a row and then examining the output files.
 </div>
 
 <div class="challenge" markdown="1">
