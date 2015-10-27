@@ -82,7 +82,7 @@ We'll try this pattern now with a few trivial commands. After each command, pres
 print "hello"
 3+5
 max(9, 4, 21, 12)
-sum(9, 4, 21, 12)
+sum([9, 4, 21, 12])
 x1, y1 = 1, 1
 x2, y2 = 9, 4
 slope = (y2 - y1) / (x2 - x1)
