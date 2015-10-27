@@ -416,6 +416,7 @@ would print the name of the `.pdb` file in `/tmp/data` that has
 the most lines.
 </div>
 
+<!--
 <div class="challenge" markdown="1">
 If you run the command:
 
@@ -428,7 +429,7 @@ the shell has added `history` to the command log before actually
 running it. In fact, the shell *always* adds commands to the log
 before running them. Why do you think it does this?
 </div>
-
+-->
 <div class="challenge" markdown="1">
 Joel's `data` directory contains three files: `fructose.dat`,
 `glucose.dat`, and `sucrose.dat`. Explain what a script called
@@ -450,7 +451,7 @@ done
 
 ~~~
 # Script 3
-echo $*.dat
+echo $@.dat
 ~~~
 
 </div>
