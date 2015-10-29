@@ -258,7 +258,7 @@ already there.
 
 With HTCondor, recall that the `condor_q` command shows jobs in the
 queue.  The Client provides an analogous command: `connect q`.  This
-command implicitly limits its results to **your** jobs, unless you use
+command implicitly limits its results to *your* jobs, unless you use
 other job selection criteria.
 
 ~~~
@@ -299,7 +299,6 @@ username@dscr-slogin-dev-01 ~/tutorial-quickstart $ connect pull
 +.+++..+...++.+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 100 objects retrieved; 7 objects up to date; 0 errors
 username@dscr-slogin-dev-01 ~/tutorial-quickstart $ ls log
-username@dscr-slogin-dev-01 ~/tutorial-quickstart $ \ls log
 job.error.252546-0   job.error.252546-9  job.output.252546-0   job.output.252546-9
 job.error.252546-1   job.error.252593-0  job.output.252546-1   job.output.252593-0
 job.error.252546-10  job.error.252593-1  job.output.252546-10  job.output.252593-1
@@ -363,11 +362,27 @@ username@dscr-slogin-dev-01 ~/tutorial-quickstart $ connect modules | head
 ...
 ~~~
 
-`connect push` will upload your current job repo without submitting.  You shouldn't need to use this very often.
+`connect push` will upload your current job repo without submitting.
+You shouldn't need to use this very often, but it can be useful if
+you want to synchronize work in progress to retrieve elsewhere.
 
 Later you'll learn also about workflow management using DAGs.  `connect dag`
 can be used analogously to `condor_submit_dag` to initiate a DAG-based
 job.
+
+Suppose you need to see what your job looks like *on the server*.  There
+are several reasons for this: you might need to debug a job in the
+actual environment it runs in; you might want to check on job outputs
+without having to download them.  Whatever the reason, the `connect
+shell` command will give you a login on the server at the same location
+as your job.  You can interact with the job files or the server system
+as needed.
+
+What if you need to know the location of your job repository on the
+server?  You might want this to copy files using some external file
+transfer -- perhaps scp, rsync, or Globus. `connect where` will tell you
+the location of your server job repo, when you run it from a client job
+repo.
 
 
 <h2>More information</h2>
