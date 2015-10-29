@@ -273,7 +273,10 @@ username@dscr-slogin-dev-01 ~/tutorial-quickstart $ connect q
 25 jobs; 0 completed, 0 removed, 25 idle, 0 running, 0 held, 0 suspended
 ~~~
 
-And you can use `connect watch` with the Client, too.
+You can use `connect watch` with the Client, too.  Or you can visit
+the [Duke CI Connect site](http://duke.ci-connect.net) and pick **Job
+Queue** from the **Resources** menu, and watch jobs flow through the
+queue.
 
 
 <h2>Retrieving results</h2>
