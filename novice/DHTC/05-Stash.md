@@ -112,7 +112,7 @@ Finally, start the Globus online personal software that you just installed.  The
 installer will ask for the setup key that you obtained from the Globus website.
 At this point, the install and setup of Globus Connect Personal is complete.
 
-Now go to [http://duke.ci-connect.net](http://login.duke.ci-connect.net) and under the
+Now go to [http://duke.ci-connect.net](http://duke.ci-connect.net) and under the
 Transfer menu, select Start Transfer.  For the first endpoint, enter username#name
 where name is the name you choose for the endpoint above. You should now see the
 files from your laptop displayed.  For the second endpoint, enter
