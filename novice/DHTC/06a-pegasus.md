@@ -153,6 +153,104 @@ time we plan/submit a workflow, but in this case we have a workflow
 which is used by different users, so changing the paths to scratch and
 output filesystems on the fly makes the workflow easier to share.
 
+Submit the workflow:
+
+~~~
+./submit
+~~~
+
+Instead of using job ids, Pegasus uses a directory as handle. Look in the
+output from the `./submit` command. You should find something similar to:
+
+~~~
+   *** To monitor the workflow you can run *** 
+    
+     pegasus-status -l /home/rynge/data/workflows/rynge/pegasus/wordfreq-workflow/20151028T203103-0500 
+~~~
+
+Run the command provided in your output
+
+~~~
+$ pegasus-status -l [dir]
+~~~
+
+Once the workflow is finished, we can find the outputs under `~/data/outputs/`. If you want to see details on how your workflow executed, you can use the `pegasus-statistics` command:
+
+~~~
+$ pegasus-statistics [dir]
+
+#
+# Pegasus Workflow Management System - http://pegasus.isi.edu
+#
+# Workflow summary:
+#   Summary of the workflow execution. It shows total
+#   tasks/jobs/sub workflows run, how many succeeded/failed etc.
+#   In case of hierarchical workflow the calculation shows the
+#   statistics across all the sub workflows.It shows the following
+#   statistics about tasks, jobs and sub workflows.
+#     * Succeeded - total count of succeeded tasks/jobs/sub workflows.
+#     * Failed - total count of failed tasks/jobs/sub workflows.
+#     * Incomplete - total count of tasks/jobs/sub workflows that are
+#       not in succeeded or failed state. This includes all the jobs
+#       that are not submitted, submitted but not completed etc. This
+#       is calculated as  difference between 'total' count and sum of
+#       'succeeded' and 'failed' count.
+#     * Total - total count of tasks/jobs/sub workflows.
+#     * Retries - total retry count of tasks/jobs/sub workflows.
+#     * Total+Retries - total count of tasks/jobs/sub workflows executed
+#       during workflow run. This is the cumulative of retries,
+#       succeeded and failed count.
+# Workflow wall time:
+#   The wall time from the start of the workflow execution to the end as
+#   reported by the DAGMAN.In case of rescue dag the value is the
+#   cumulative of all retries.
+# Workflow cumulative job wall time:
+#   The sum of the wall time of all jobs as reported by kickstart.
+#   In case of job retries the value is the cumulative of all retries.
+#   For workflows having sub workflow jobs (i.e SUBDAG and SUBDAX jobs),
+#   the wall time value includes jobs from the sub workflows as well.
+# Cumulative job wall time as seen from submit side:
+#   The sum of the wall time of all jobs as reported by DAGMan.
+#   This is similar to the regular cumulative job wall time, but includes
+#   job management overhead and delays. In case of job retries the value
+#   is the cumulative of all retries. For workflows having sub workflow
+#   jobs (i.e SUBDAG and SUBDAX jobs), the wall time value includes jobs
+#   from the sub workflows as well.
+# Workflow cumulative job badput wall time:
+#   The sum of the wall time of all failed jobs as reported by kickstart.
+#   In case of job retries the value is the cumulative of all retries.
+#   For workflows having sub workflow jobs (i.e SUBDAG and SUBDAX jobs),
+#   the wall time value includes jobs from the sub workflows as well.
+# Cumulative job badput wall time as seen from submit side:
+#   The sum of the wall time of all failed jobs as reported by DAGMan.
+#   This is similar to the regular cumulative job badput wall time, but includes
+#   job management overhead and delays. In case of job retries the value
+#   is the cumulative of all retries. For workflows having sub workflow
+#   jobs (i.e SUBDAG and SUBDAX jobs), the wall time value includes jobs
+#   from the sub workflows as well.
+------------------------------------------------------------------------------
+Type           Succeeded Failed  Incomplete  Total     Retries   Total+Retries
+Tasks          6         0       0           6         0         6            
+Jobs           17        0       0           17        0         17           
+Sub-Workflows  0         0       0           0         0         0            
+------------------------------------------------------------------------------
+
+Workflow wall time                                       : 8 mins, 22 secs
+Workflow cumulative job wall time                        : 22 secs
+Cumulative job wall time as seen from submit side        : 1 min, 45 secs
+Workflow cumulative job badput wall time                 : 
+Cumulative job badput wall time as seen from submit side : 
+
+~~~
+
+<br/>
+<br/>
+
+> ### On your own
+> * Start a new workflow with a larger input data set. Copy all the files in the `many-more-inputs` directory to the `inputs` directory, and run `./submit`. Check the status with `pegasus-status`
+> * A nice feature is that failed/stopped workflows can be recovered from where they left of. While
+the workflow is running, use `pegasus-remove [dir]` to stop the workflow. Wait for the jobs to leave the queue, and then use `pegasus-run [dir]` to start the workflow up again.
+
 <div class="keypoints" markdown="1">
 
 #### Keypoints
@@ -160,25 +258,11 @@ output filesystems on the fly makes the workflow easier to share.
 
 *   It is convenient to generate the xml files via scripts. In our example, dax.xml is generated via python script and sites.xml is generated via bash script.
 
-*   To implement a new workflow, edit the existing dax-generator, sites-generator and  submit scripts.  In the above examples, we modified the workflow for the single NAMD job to implement the workflows of N-sequential and M-parallel, N-sequential jobs.
+*   To implement a new workflow, edit the existing dax-generator, sites-generator and  submit scripts.
  
 </div>
 
 
- 
-<div class="keypoints" markdown="1">
-
-#### References
-
-*   [Pegasus Documentation Pegasus documentation page](https://pegasus.isi.edu/wms/docs/latest/)
-
-*   [OSG QuickStart. Getting started with the Open Science Grid (OSG)](https://confluence.grid.iu.edu/display/CON/Home)
-
-*   [HTCondor Manual. Manual for the High Throughput Condor software to schedules the jobs on OSG](http://research.cs.wisc.edu/htcondor/manual/v8.2/2_Users_Manual.html)
-
-
-*For further assistance or questions, please email connect-support@opensciencegrid.org.
-</div>
 
 
 
