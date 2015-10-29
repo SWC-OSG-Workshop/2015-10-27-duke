@@ -80,9 +80,8 @@ $ condor_submit error101_job.submit
 <br/>
 
 > ### On your own
-> * Use the `connect status` command to get a list of pools (e.g., `osg-flock.grid.iu.edu`) <br/>
-> * Edit `error101_job.submit`, add a `Requirements` line with `Requirements = OSGVO_OS_STRING == "RHEL 8"` before the `queue` statement. <br/>
-> *  Use `condor_q -better-analyze` against the pool. Does it match any slots? If so, where?
+> * Edit `error101_job.submit`, add a `Requirements` line with `Requirements = OSGVO_OS_STRING == "RHEL 8"` before the `queue` statement and submit a new job.<br/>
+> *  Use `condor_q -better-analyze` against the pool and the new job. Does it match any slots? If so, where?
 > *  How about RHEL 6? Hint: you can explora a pool with condor_status' -constraint flag. For example: `condor_status -pool osg-flock.grid.iu.edu -constraint 'OSGVO_OS_STRING == "RHEL 6"'`
 
 <br/>
