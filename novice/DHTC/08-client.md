@@ -60,7 +60,7 @@ gets you past some security requirements.
 
 
 You can get all the client information at
-[http://ci-connect.net/getclient](http://ci-connect.net/getclient).
+[http://ci-connect.net/client](http://ci-connect.net/client).
 
 ~~~
 mylaptop$ ssh username@login.oit.duke.edu
