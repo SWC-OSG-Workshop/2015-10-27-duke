@@ -51,6 +51,6 @@ Come to this session to learn all about DHTC and the basics of grid computing. F
 5.  [Handling Data](05-Stash.html)  - Suchandra
 6.  [Scaling Up Computing Resources - R and MATLAB runtime examples](04a-ScalingUp.html) - Bala
 7.  [Handling Job Dependencies - DAGMan](06-dagman-namd.html) - Bala 
-8.  [Large Scale Computation with  Pegasus](06a-pegasus-namd.html) - Mats
+8.  [Large Scale Computation with  Pegasus](06a-pegasus.html) - Mats
 
 </div>
