@@ -81,7 +81,7 @@ In the wordfreq-workflow directory, you will find:
 
 * inputs/ (directory)
 * dax-generator.py
-* pegasusrc
+* pegasus.conf
 * submit
 * wordfreq
 
@@ -254,7 +254,7 @@ the workflow is running, use `pegasus-remove [dir]` to stop the workflow. Wait f
 <div class="keypoints" markdown="1">
 
 #### Keypoints
-*   Pegasus requires dax.xml, sites.xml and pegasusrc files. These files contain the information about executable, input and output files and the relation between them while executing the jobs.
+*   Pegasus requires dax.xml, sites.xml and pegasus.conf files. These files contain the information about executable, input and output files and the relation between them while executing the jobs.
 
 *   It is convenient to generate the xml files via scripts. In our example, dax.xml is generated via python script and sites.xml is generated via bash script.
 
