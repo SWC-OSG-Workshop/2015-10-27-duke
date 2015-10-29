@@ -45,7 +45,7 @@ title: Lessons
 4.  [Data Storage and Transfer ](novice/DHTC/05-Stash.html)
 5.  [Scaling Up Resources - R and MATLAB runtime examples](novice/DHTC/04a-ScalingUp.html)
 6.  [Handling Job Dependencies - DAGMan](novice/DHTC/06-dagman-namd.html)
-8.  [Large Scale Computation with Pegasus (optional) ](novice/DHTC/06a-pegasus-namd.html)
+8.  [Large Scale Computation with Pegasus (optional) ](novice/DHTC/06a-pegasus.html)
 
 ## Further Materials
 
