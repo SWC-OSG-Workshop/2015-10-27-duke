@@ -335,6 +335,79 @@ $ condor_rm 829.0
 Job 829.0 has been marked for removal.
 ~~~
 
+## Job Requirements - A Basic OSG Job ##
+
+HTCondor job and machines are represented as HTCondor classads. These are sets
+of key/value attribute pairs. Let's examine a what a machine classad looks like.
+This is a two step process, first we get a name for one of the machines, and then
+we ask condor_status to give us the details for that machine (-long).
+
+~~~
+$ condor_status -pool osg-flock.grid.iu.edu -af Name | head -n 1
+[resource name]
+$ condor_status -long -pool osg-flock.grid.iu.edu [resource name] | sort
+HAS_FILE_usr_lib64_libgfortran_so_3 = true
+HAS_MODULES = false
+OSGVO_OS_STRING = "RHEL 6"
+~~~
+
+You can make use any of these attributes to limit where your jobs go. The following
+is a fairly complete OSG job which you can use when getting started on OSG. Note
+the `Requirements` and `requests_*` lines.
+
+~~~
+# The UNIVERSE defines an execution environment. You will almost always use VANILLA.
+Universe = vanilla
+
+# These are good base requirements for your jobs on OSG. It is specific on OS and
+# OS version, core cound and memory, and wants to use the software modules. 
+Requirements = OSGVO_OS_STRING == "RHEL 6" && HAS_MODULES == True
+request_cpus = 1
+request_memory = 1 GB
+
+# EXECUTABLE is the program your job will run It's often useful
+# to create a shell script to "wrap" your actual work.
+Executable = short.sh
+
+# ERROR and OUTPUT are the error and output channels from your job
+# that HTCondor returns from the remote host.
+Error = job.$(Cluster).$(Process).error
+Output = job.$(Cluster).$(Process).output
+
+# The LOG file is where HTCondor places information about your
+# job's status, success, and resource consumption.
+Log = job.log
+
+# Send the job to Held state on failure. 
+on_exit_hold = (ExitBySignal == True) || (ExitCode != 0)  
+
+# Periodically retry the jobs every 60 seconds, up to a maximum of 5 retries.
+periodic_release =  (NumJobStarts < 5) && ((CurrentTime - EnteredCurrentStatus) > 60)
+
+# QUEUE is the "start button" - it launches any jobs that have been
+# specified thus far.
+Queue 1
+
+~~~
+
+You can test this job by submitting and monitoring it as we have just covered:
+
+
+~~~
+$ condor_submit osg-template-job.submit
+Submitting job(s).
+1 job(s) submitted to cluster 830
+~~~
+
+The filenames for this job includes a job id, which means that if you submit more
+than one job, they will all have unique outputs.
+
+~~~
+$ ls *.output
+job.830.0.output
+job.831.0.output
+~~~
+
 <div class="keypoints" markdown="1">
 
 #### Key Points
