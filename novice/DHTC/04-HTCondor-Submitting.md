@@ -1,7 +1,7 @@
 ---
 layout: lesson
 root: ../..
-title: Job submission on OSG Connect
+title: Job submission on Duke CI Connect
 ---
 <div class="objectives" markdown="1">
 
@@ -12,42 +12,40 @@ title: Job submission on OSG Connect
 
 <h2>Overview</h2> In this section, we will learn the basics of HTCondor
 in submitting and monitoring workloads, or "jobs". The jobs are
-submitted through the login node of OSG Connect. The submitted jobs are
-executed on the remote worker node(s) and the outputs are transfered
-back to the login node. In the HTCondor job submit file, we have to
-describe how to execute the program and transfer the output data.
+submitted through the login node of Duke CI Connect. The submitted
+jobs are executed on the remote worker node(s) and the outputs are
+transferred back to the login node. In the HTCondor job submit file,
+we have to describe how to execute the program and transfer the output
+data.
 
-<h2>Login to OSG Connect </h2>
+<h2>Login to Duke CI Connect</h2>
 
-First, we log in to OSG Connect:
+First, we log in to Duke CI Connect:
 
 ~~~
-$ ssh username@ login.duke.ci-connect.net  # username is your username
+$ ssh username@login.duke.ci-connect.net   # username is your username
 password:                                  # enter your password
 ~~~
 
-Let's introduce a command that will be useful throughout your OSG Connect
+Let's introduce a command that will be useful throughout your Duke CI Connect
 usage: `connect`.
 
-`Connect` is a single interface to tools that enhance or simplify your use
-of the OSG Connect platform.  We occasionally add components to this command
-to provide new capabilities, or to make common tasks easier.  Let's look at
-usage:
+`Connect` is a single interface to tools that enhance or simplify your
+use of the Duke CI Connect platform.  We occasionally add components
+to this command to provide new capabilities, or to make common tasks
+easier.  Let's look at usage:
 
 ~~~
 $ connect
 usage: connect <subcommand> [args]
-       connect addsite user@hostname sched-type
-       connect cclog
-       connect debug
+       connect client [opts] <subcommand> [args]
+       connect help [subcommands...]
        connect histogram [-l | --last] [user]
-       connect project
-       connect reset
-       connect setup
+       connect project 
        connect show-projects [-u username] [projectname]
        connect status [-f | --full]
-       connect submit
-       connect watch [seconds [user]]
+       connect watch 
+
 ~~~
 
 Each of these subcommands has a specific role, and we'll explore some of them
@@ -60,8 +58,8 @@ access to:
   * duke-SWC-Duke15
 ~~~
 
-Each time you run a workload on OSG Connect, you need a project name to
-associate it.  For your research work later on, we can get you started
+Each time you run a workload on Duke CI Connect, you need a project name to
+associate with.  For your research work later on, we can get you started
 with a permanent project, but for now you should find the duke-SWC-Duke15
 project available.  Some of you might also find the ConnectTrain project
 listed -- that is OK but not necessary.
@@ -70,11 +68,11 @@ listed -- that is OK but not necessary.
 $ connect project
 ~~~
 
-If you're a heavy user of OSG Connect, you may end up with multiple projects.
-`connect project` is a way both to see your available projects, and to
-change which project is used for your job submission.  Your choice here is
-saved, so whatever project you selected most recently is used for all future
-workloads, until you change it again.
+If you're a heavy user of Duke CI Connect, you may end up with multiple
+projects.  `connect project` is a way both to see your available
+projects, and to change which project is used for your job submission.
+Your choice here is saved, so whatever project you selected most
+recently is used for all future workloads, until you change it again.
 
 > #### A little more about projects ####
 >
@@ -130,7 +128,7 @@ echo "Science complete!"
 ~~~
 
 To close nano, hold down Ctrl and press X. Press Y to save, and then
-Enter Now, make the script executable.  Recall that this is not
+Enter Now, make the script executable.  You may recall that this is not
 necessary for shell programs that you create and run locally.  However,
 _it is extremely important for jobs running on the grid_.  So is the
 "shbang" line (`#!/bin/sh`).
@@ -151,7 +149,9 @@ $ ./short.sh
 ~~~
 Start time: Wed Aug 21 09:21:35 CDT 2013
 
-Job is running on node: login.duke.ci-connect.net
+Job is running on node: duke-login.osgconnect.net
+
+Job running as user: uid=49152(username) gid=1000(users) groups=1000(users),5478(@duke-SWC-Duke15),5532(@connect),5782(@osg),7114(@duke)
 
 Job running as user: uid=54161(username) gid=1000(users) groups=1000(users),0(root),1001(osg-connect),1002(osg-staff),1003(osg-connect-test),9948(staff),19012(osgconnect)
 
@@ -213,7 +213,7 @@ jobs by adding your own username to the command.
 
 ~~~
 $ condor_q username
--- Submitter: login.duke.ci-connect.net : <128.135.158.173:43606> : login.duke.ci-connect.net
+-- Submitter: duke-login.osgconnect.net : <128.135.158.173:43606> : duke-login.osgconnect.net
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
  823.0   username           8/21 09:46   0+00:00:06 R  0   0.0  short.sh
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
@@ -225,7 +225,7 @@ cluster -- the number that `condor_submit` gave you.
 
 ~~~
 $ condor_q 823
--- Submitter: login.duke.ci-connect.net : <128.135.158.173:43606> : login.duke.ci-connect.net
+-- Submitter: duke-login.osgconnect.net : <128.135.158.173:43606> : duke-login.osgconnect.net
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
  823.0   username           8/21 09:46   0+00:00:10 R  0   0.0  short.sh
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
@@ -246,7 +246,7 @@ not appear in condor_q.
 You may sometimes see jobs in **H** state.  These are _held_ jobs. Held
 jobs are stalled, usually for a specific reason, and won't progress until
 released.  Until you gain savvy with diagnosing why a job is held and
-solving it on your own, you may contact the OSG Connect support team
+solving it on your own, you may contact the Duke CI Connect support team
 for help with held jobs.
 
 Let's wait for your job to finish – that is, for condor_q not to show
