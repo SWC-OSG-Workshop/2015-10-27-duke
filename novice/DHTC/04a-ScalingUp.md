@@ -82,16 +82,10 @@ Submitting job(s).........................
 100 job(s) submitted to cluster 837.
 ~~~
 
-Apply your `condor_q` and `connect watch` knowledge to see this job
-progress. Execute the following bash script to compute the average from all the jobs.
 
-Once the jobs are completed, you might want to invoke the script 
+Now you have submitted the an ensemble of 100 jobs. The jobs should be finished quickly (less than few minutes). You can check the status of the submitted job by using the `condor_q` command as follows
 
-~~~
-$ ./mcpi_ave.bash
-~~~
-
-to compute the average value of pi from all the available outputs.  
+    $ condor_q username  # The status of the job is printed on the screen. Here, username is your login name.
 
 ## Interlude: utilization plots
 
