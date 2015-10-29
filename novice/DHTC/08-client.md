@@ -278,6 +278,9 @@ the [Duke CI Connect site](http://duke.ci-connect.net) and pick **Job
 Queue** from the **Resources** menu, and watch jobs flow through the
 queue.
 
+`connect histogram` is a fun tool for seeing just where your jobs
+are landing.
+
 
 <h2>Retrieving results</h2>
 
