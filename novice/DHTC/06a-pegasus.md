@@ -67,6 +67,11 @@ Pegasus workflows have 4 components:
 
 However, for simple workflows, the transformation and replica catalog can be contained inside the DAX, and to further simplify the setup, the following examples generate the site catalog on the fly. This means that the user really only has to be concerned about creating the DAX. For details, please refer to the [Pegasus documentation](http://pegasus.isi.edu/wms/docs/latest/)
 
+The DAX and the catalogs are used as inputs to the Pegasus planning process. This takes the abstract workflow, and plans it into an executable workflow. The following picture illustrates how a two node abstract workflow could be planned for a particular execution environment:
+
+<div>
+   <img alt="pegasus-dax-dag" src="{{page.root}}/novice/DHTC/PegasusImages/mapping.jpg">
+</div>
 
 <h2>wordfreq example</h2> 
 
